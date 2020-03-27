@@ -1,13 +1,12 @@
 import React from 'react';
+import './App.css';
 import logo from './logo.svg';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles} from '@material-ui/core/styles';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import './App.css';
 import Navegacio from "./Navegacio";
 
 const useStyles = makeStyles(theme => ({
@@ -21,10 +20,10 @@ const useStyles = makeStyles(theme => ({
 const darkTheme = createMuiTheme({
   palette: {
     primary: {
-      main:'#80d6d1'
+      main: '#80d6d1'
     },
     secondary: {
-      main:'#303030'
+      main: '#303030'
     },
     background: {
       paper: '#e5e5e5',
@@ -38,23 +37,23 @@ function App() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-        <div>
-          <AppBar position="static" color="secondary">
-            <Toolbar>
-              <Typography align='left' variant="h5" className={classes.title}>
-                YourMeal
+      <div>
+        <AppBar position="static" color="secondary">
+          <Toolbar>
+            <Typography align='left' variant="h5" className={classes.title}>
+              YourMeal
               </Typography>
-            </Toolbar>
-          </AppBar>
-        </div>
-        <Container className={classes.content}>
-          <header>
-              <Typography align="center" variant="h5">
-                Benvingut a YourMeal  
+          </Toolbar>
+        </AppBar>
+      </div>
+      <Container className={classes.content}>
+        <header>
+          <Typography align="center" variant="h5">
+            Benvingut a YourMeal
               </Typography>
-          </header>
-        </Container>
-      <Navegacio/>
+        </header>
+      </Container>
+      <Navegacio />
     </ThemeProvider>
   );
 }
