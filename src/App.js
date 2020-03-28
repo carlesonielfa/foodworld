@@ -1,12 +1,11 @@
 import React from 'react';
+import './App.css';
 import logo from './logo.svg';
 import {AppBar,Toolbar,Container,Typography} from '@material-ui/core';
-
 import { makeStyles, createMuiTheme} from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
 import { Switch, Route, BrowserRouter } from 'react-router-dom'
-
 import Carta from "./Carta"
 import Inici from "./Inici"
 import Cistella from "./Cistella"
@@ -16,10 +15,10 @@ import Navegacio from "./Navegacio"
 const darkTheme = createMuiTheme({
   palette: {
     primary: {
-      main:'#80d6d1'
+      main: '#80d6d1'
     },
     secondary: {
-      main:'#303030'
+      main: '#303030'
     },
     background: {
       paper: '#e5e5e5',
