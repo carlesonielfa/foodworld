@@ -3,6 +3,7 @@ import { makeStyles} from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import {ShoppingCart, HomeRounded, RestaurantMenuRounded} from '@material-ui/icons/'
+import {Link} from "react-router-dom"
 
 const buttonCartaStyles = makeStyles(theme => ({
   //style pel boto carta
@@ -54,9 +55,9 @@ export default function Navegacio() {
         showLabels
         className={navClasses.root}
     >
-        <BottomNavigationAction classes = {buttonClasses} icon ={<HomeRounded/>} />
-        <BottomNavigationAction classes={cartaClasses} label = "Carta" icon ={<RestaurantMenuRounded /> } />
-        <BottomNavigationAction classes = {buttonClasses} icon ={<ShoppingCart/>} />
+        <BottomNavigationAction classes = {buttonClasses} icon ={<HomeRounded/>} component={Link} to="/"/>
+        <BottomNavigationAction classes={cartaClasses} label = "Carta" icon ={<RestaurantMenuRounded /> } component={Link} to="/carta"/>
+        <BottomNavigationAction classes = {buttonClasses} icon ={<ShoppingCart/>} component={Link} to="/cistella"/>
     </BottomNavigation>
   );
 }

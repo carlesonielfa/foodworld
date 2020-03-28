@@ -1,21 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles} from '@material-ui/core/styles';
-import { createMuiTheme } from '@material-ui/core/styles';
+import {AppBar,Toolbar,Container,Typography} from '@material-ui/core';
+
+import { makeStyles, createMuiTheme} from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import './App.css';
-import Navegacio from "./Navegacio";
+import { Switch, Route, BrowserRouter } from 'react-router-dom'
 
-const useStyles = makeStyles(theme => ({
-  content: {
-    backgroundColor: theme.palette.background.default,
-    minHeight: '90vh'
-  }
-}))
+import Carta from "./Carta"
+import Inici from "./Inici"
+import Cistella from "./Cistella"
+import Navegacio from "./Navegacio"
 
 //TEMA DE LA APP
 const darkTheme = createMuiTheme({
@@ -33,11 +28,60 @@ const darkTheme = createMuiTheme({
   },
 });
 
+const useStyles = makeStyles(theme => ({
+  content: {
+    backgroundColor: theme.palette.background.default,
+    minHeight: '90vh'
+  }
+}))
+
+//Estils navegacio
+const buttonCartaStyles = makeStyles(theme => ({
+  //style pel boto carta
+  root: {
+    color: theme.palette.secondary.main,
+    "&$selected": {
+      backgroundColor: theme.palette.primary.light,
+      color: theme.palette.secondary.main,
+    },
+    backgroundColor: theme.palette.primary.main,
+    borderRadius:"50%",
+    top: "-35px",
+    maxWidth: "0",
+    height: "130%"
+
+  },
+  selected:{}
+}))
+const buttonStyles = makeStyles(theme => ({
+  //style pels altres botons
+  root: {
+    color: theme.palette.secondary.light,
+    "&$selected": {
+      color: "white",
+    },
+  },
+  selected:{}
+}))
+const bottomNavStyles = makeStyles(theme => ({
+  //style per la navigation
+  root: {
+    width: '100%',
+    position: 'fixed',
+    bottom: 0,
+    backgroundColor: theme.palette.secondary.main
+  },
+
+}))
+
+
+
 function App() {
   const classes = useStyles();
-
+  
   return (
-    <ThemeProvider theme={darkTheme}>
+
+      <ThemeProvider theme={darkTheme}>
         <div>
           <AppBar position="static" color="secondary">
             <Toolbar>
@@ -47,15 +91,22 @@ function App() {
             </Toolbar>
           </AppBar>
         </div>
-        <Container className={classes.content}>
-          <header>
-              <Typography align="center" variant="h5">
-                Benvingut a YourMeal  
-              </Typography>
-          </header>
-        </Container>
-      <Navegacio/>
-    </ThemeProvider>
+
+        <BrowserRouter>
+          <Container className={classes.content}>
+            <Switch>
+              <Route path="/" exact><Inici/></Route>
+              <Route path="/carta"><Carta/></Route>
+              <Route path="/cistella"><Cistella/></Route>
+            </Switch>
+          </Container>
+
+
+
+          <Navegacio/>
+        </BrowserRouter>
+      </ThemeProvider>
+
   );
 }
 
