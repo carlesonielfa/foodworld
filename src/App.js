@@ -95,9 +95,9 @@ function App() {
         <BrowserRouter>
           <Container className={classes.content}>
             <Switch>
-              <Route path="/" exact><Inici/></Route>
-              <Route path="/carta"><Carta/></Route>
-              <Route path="/cistella"><Cistella/></Route>
+              <Route path="/fhc6/" exact><Inici/></Route>
+              <Route path="/fhc6/carta"><Carta/></Route>
+              <Route path="/fhc6/cistella"><Cistella/></Route>
             </Switch>
           </Container>
 

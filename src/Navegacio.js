@@ -55,9 +55,9 @@ export default function Navegacio() {
         showLabels
         className={navClasses.root}
     >
-        <BottomNavigationAction classes = {buttonClasses} icon ={<HomeRounded/>} component={Link} to="/"/>
-        <BottomNavigationAction classes={cartaClasses} label = "Carta" icon ={<RestaurantMenuRounded /> } component={Link} to="/carta"/>
-        <BottomNavigationAction classes = {buttonClasses} icon ={<ShoppingCart/>} component={Link} to="/cistella"/>
+        <BottomNavigationAction classes = {buttonClasses} icon ={<HomeRounded/>} component={Link} to="/fhc6/"/>
+        <BottomNavigationAction classes={cartaClasses} label = "Carta" icon ={<RestaurantMenuRounded /> } component={Link} to="/fhc6/carta"/>
+        <BottomNavigationAction classes = {buttonClasses} icon ={<ShoppingCart/>} component={Link} to="/fhc6/cistella"/>
     </BottomNavigation>
   );
 }
