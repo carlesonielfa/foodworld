@@ -5,9 +5,9 @@ import {
   ButtonBase,
   Container,
   CardActionArea,
+  CardMedia,
   CardContent
 } from "@material-ui/core";
-import { CardMedia } from "material-ui";
 
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
@@ -89,16 +89,26 @@ export default function Carta() {
   const classes = buttonItemMenu();
 
   // TODO: El final queda tallat
-  // TODO: No puc afegir la imatge
-  // <CardMedia className={classes.media} image="./assets/pizza.png" />
+
+  // TODO: No puc afegir la imatge (linia 100)
+  // <img src={require(image.url)} />
   return (
     <div align="center">
-      <CardActionArea>
-        <CardContent>
-          <Typography>Pizzanini</Typography>
-        </CardContent>
-      </CardActionArea>
-
+      {images.map(image => (
+        <div>
+          <img src={require("./assets/pizza.png")} />
+          
+          <p>src={image.url}</p>
+        </div>
+      ))}
+      <div>
+        <CardActionArea component={Link} to="/fhc6/italia">
+          <CardMedia className={classes.media} image="/assets/pizza.png" />
+          <CardContent>
+            <Typography>Pizzanini</Typography>
+          </CardContent>
+        </CardActionArea>
+      </div>
       <div className={classes.root}>
         {images.map(image => (
           <div>
@@ -131,15 +141,6 @@ export default function Carta() {
           </div>
         ))}
       </div>
-
-      <Button
-        variant="contained"
-        color="primary"
-        component={Link}
-        to="/fhc6/italia"
-      >
-        Italià
-      </Button>
     </div>
   );
 }
