@@ -17,130 +17,122 @@ import Italia from "./Italia";
 
 import pizza from "./assets/pizza.png";
 
+import japones from "./assets/japones.jpg"
 // LINK PER PODER ENTENDRE AIXÔ:
 // https://material-ui.com/components/buttons/
 
 const images = [
   {
-    url: "./assets/pizza.png",
+    file: pizza,
     title: "Italià"
   },
   {
-    url: "./assets/pizza.png",
+    file: japones,
     title: "Japonés"
   }
 ];
 
 const buttonItemMenu = makeStyles(theme => ({
-  root: {},
-  image: {
-    height: 200
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    minWidth: 300,
+    width: '100%',
   },
+  image: {
+    position: 'relative',
+    height: 200,
+    width: '90%',
+    marginTop: '40px',
+    marginBot: '20px',
+    '&:hover, &$focusVisible': {
+      zIndex: 1,
+      '& $imageBackdrop': {
+        opacity: 0.15,
+      },
+      '& $imageMarked': {
+        opacity: 0,
+      },
+      '& $imageTitle': {
+        border: '4px solid currentColor',
+      },
+    },
+  },
+  focusVisible: {},
   imageButton: {
-    position: "absolute",
-    left: 0,
-    right: 0,
-    top: 0,
-    bottom: 0,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    color: theme.palette.common.white
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: theme.palette.common.white,
   },
   imageSrc: {
-    position: "absolute",
+    position: 'absolute',
     left: 0,
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundSize: "cover",
-    backgroundPosition: "center 40%"
+    backgroundSize: 'cover',
+    backgroundPosition: 'center 40%',
   },
   imageBackdrop: {
-    position: "absolute",
+    position: 'absolute',
     left: 0,
     right: 0,
     top: 0,
     bottom: 0,
     backgroundColor: theme.palette.common.black,
     opacity: 0.4,
-    transition: theme.transitions.create("opacity")
+    transition: theme.transitions.create('opacity'),
   },
   imageTitle: {
-    position: "relative",
-    padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) +
-      6}px`
+    position: 'relative',
+    padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6}px`,
   },
   imageMarked: {
     height: 3,
     width: 18,
     backgroundColor: theme.palette.common.white,
-    position: "absolute",
+    position: 'absolute',
     bottom: -2,
-    left: "calc(50% - 9px)",
-    transition: theme.transitions.create("opacity")
+    left: 'calc(50% - 9px)',
+    transition: theme.transitions.create('opacity'),
   },
-  media: {
-    height: 140
-  }
 }));
 
 export default function Carta() {
   const classes = buttonItemMenu();
 
-  // TODO: El final queda tallat
-
-  // TODO: No puc afegir la imatge (linia 100)
-  // <img src={require(image.url)} />
   return (
+    
     <div align="center">
-      {images.map(image => (
-        <div>
-          <img src={require("./assets/pizza.png")} />
-          
-          <p>src={image.url}</p>
-        </div>
+      {images.map(image =>(
+        <ButtonBase
+        focusRipple
+        key={image.title}
+        className={classes.image}
+        focusVisibleClassName={classes.focusVisible}
+      >
+          <span
+            className={classes.imageSrc}
+            style={{
+              backgroundImage: `url(${image.file})`,
+            }}
+          />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton}>
+            <Typography
+              variant="h2"
+              color="inherit"
+              className={classes.imageTitle}>
+
+              {image.title}
+              <span className={classes.imageMarked} />
+            </Typography>
+          </span>
+        </ButtonBase>
       ))}
-      <div>
-        <CardActionArea component={Link} to="/fhc6/italia">
-          <CardMedia className={classes.media} image="/assets/pizza.png" />
-          <CardContent>
-            <Typography>Pizzanini</Typography>
-          </CardContent>
-        </CardActionArea>
-      </div>
-      <div className={classes.root}>
-        {images.map(image => (
-          <div>
-            <ButtonBase
-              className={classes.image}
-              focusVisibleClassName={classes.focusVisible}
-              style={{
-                width: image.width
-              }}
-            >
-              <span
-                className={classes.imageSrc}
-                style={{
-                  backgroundImage: `url(${image.url})`
-                }}
-              />
-              <span className={classes.imageBackdrop} />
-              <span className={classes.imageButton}>
-                <Typography
-                  component="span"
-                  variant="subtitle1"
-                  color="inherit"
-                  className={classes.imageTitle}
-                >
-                  {image.title}
-                  <span className={classes.imageMarked} />
-                </Typography>
-              </span>
-            </ButtonBase>
-          </div>
-        ))}
-      </div>
-    </div>
+    </div>  
+      
+
   );
 }
