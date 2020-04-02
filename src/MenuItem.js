@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import {makeStyles} from "@material-ui/core";
-import pizza from "./assets/pizza.png";
+import pizza from "./assets/italian.jpg";
 
 const styles = makeStyles(theme => ({
     root:{

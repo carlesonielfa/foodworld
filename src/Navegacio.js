@@ -18,11 +18,11 @@ const buttonCartaStyles = makeStyles(theme => ({
   root: {
     color: theme.palette.primary.main,
     "&$selected": {
-      backgroundColor: theme.palette.distinctive.light,
+      backgroundColor: theme.palette.accent.light,
       color: theme.palette.primary.main
     },
-    backgroundColor: theme.palette.distinctive.main,
-    borderRadius: "50%",
+    backgroundColor: theme.palette.accent.main,
+    borderRadius: "100%",
     top: "-35px",
     maxWidth: "0",
     height: "130%"

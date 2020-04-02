@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 
-import pizza from "./assets/pizza.png";
+import pizza from "./assets/italian.jpg";
 import MenuItem from "./MenuItem";
 import { ListItemIcon } from "@material-ui/core";
 

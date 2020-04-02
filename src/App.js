@@ -14,58 +14,15 @@ import Italia from "./Italia";
 import "typeface-montserrat";
 import "typeface-inter";
 //TEMA DE LA APP
-const darkTheme = createMuiTheme({
-  typography:{
-    fontFamily: '"Inter", "Montserrat", sans-serif',
-    fontSize: 12,
 
-    h1:{
-      fontFamily: '"Montserrat", "Inter", sans-serif',
-      fontWeight: 500,
-      fontSize: 30
-    },
-    h2:{
-      fontFamily: '"Montserrat", "Inter", sans-serif',
-      fontWeight: 500,
-      fontSize: 24
-    },
-    h3:{
-      fontFamily: '"Montserrat", "Inter", sans-serif',
-      fontWeight: 500,
-      fontSize: 18
-    },
-    subtitle1:{
-      fontFamily: '"Montserrat", "Inter", sans-serif',
-      fontWeight: 500,
-      fontSize: 14
-    },
-
-  },
-
-  palette: {
-    primary: {
-      main: "#333333"
-    },
-    secondary: {
-      main: "#727171"
-    },
-    distinctive: {
-      main: "#80d6d1"
-    },
-    background: {
-      paper: "#f8f3f0",
-      default: "#f8f3f0"
-    },
-    highlight: {
-      main: '#ff5656'
-    }
-  }
-});
 
 const useStyles = makeStyles(theme => ({
   content: {
     backgroundColor: theme.palette.background.default,
     minHeight: "90vh"
+  }, 
+  title: {
+    color: theme.palette.accent.main
   }
 }));
 
@@ -73,7 +30,7 @@ function App() {
   const classes = useStyles();
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <div>
       <div>
         <AppBar position="static" color="primary">
           <Toolbar>
@@ -104,7 +61,7 @@ function App() {
 
         <Navegacio />
       </BrowserRouter>
-    </ThemeProvider>
+      </div>
   );
 }
 
