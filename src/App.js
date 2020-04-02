@@ -38,7 +38,7 @@ function App() {
         <AppBar position="static" color="primary">
           <Toolbar>
             <Typography align="left" variant="h1" className={classes.title}>
-              YourMeal
+              FoodWorld
             </Typography>
           </Toolbar>
         </AppBar>

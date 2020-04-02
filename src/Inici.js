@@ -1,5 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
+import sharing from "./assets/sharing.jpg";
 
 
 export default function Inici(){
@@ -15,6 +16,11 @@ export default function Inici(){
             <Typography align="center">
                 Body
             </Typography>
+            <div align="center">
+            <img src={sharing} width="350px"></img>
+            </div>
+            
         </div>
+
     );
 }
