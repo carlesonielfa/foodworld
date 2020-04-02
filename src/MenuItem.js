@@ -2,37 +2,49 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import {makeStyles} from "@material-ui/core";
 import pizza from "./assets/italian.jpg";
+import QuantitySelect from "./QuantitySelect";
 
 const styles = makeStyles(theme => ({
-    root:{
-        display: "flex",
-        align: "center",
-        margin: '20px'
-    },
-    imageContainer:{
-        width: "90%"
-    },
-}))
+  root: {
+    display: "flex",
+    align: "center",
+    padding: "20px"
+  },
+  imageContainer: {
+    display: "flex",
+    alignItems: "center",
+    verticalAlign: "middle",
+    paddingRight: "15px"
+  },
+  image: {
+    width: "110px"
+  },
+  infoContainer: {
+    width: "100%"
+    //backgroundColor: "grey"
+  },
+  description: {
+    textAlign: "justify"
+  }
+}));
 
 export default function MenuItem(props) {
-    const classes = styles();
+  const classes = styles();
 
-    return (
+  return (
     <div className={classes.root}>
-        <div>
-            <img className={classes.imageContainer} src={props.image}></img>
-        </div>
-        <div>
-            <Typography variant="h3">
-                {props.title}
-            </Typography>
-            <Typography >
-                {props.description}
-            </Typography>
-            <Typography variant="subtitle1" color="secondary">
-                {props.prize}
-            </Typography>
-        </div>
+      <div className={classes.imageContainer}>
+        <img className={classes.image} src={props.image} alt={props.title}></img>
+      </div>
+      <div className={classes.infoContainer}>
+        <Typography variant="h3" align="center">
+          {props.title}
+        </Typography>
+        <Typography className={classes.description}>
+          {props.description}
+        </Typography>
+        <QuantitySelect price={props.price} />
+      </div>
     </div>
-    );
+  );
 }
