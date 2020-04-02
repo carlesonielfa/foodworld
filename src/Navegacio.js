@@ -16,12 +16,12 @@ const buttonCartaStyles = makeStyles(theme => ({
   // NOTA: per fer-lo rodó s'ha de fer:
   // borderRadius = 2*width = 2*height =
   root: {
-    color: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
     "&$selected": {
-      backgroundColor: theme.palette.primary.light,
-      color: theme.palette.secondary.main
+      backgroundColor: theme.palette.distinctive.light,
+      color: theme.palette.primary.main
     },
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.distinctive.main,
     borderRadius: "50%",
     top: "-35px",
     maxWidth: "0",
@@ -35,7 +35,7 @@ const buttonStyles = makeStyles(theme => ({
   root: {
     color: theme.palette.secondary.light,
     "&$selected": {
-      color: "white"
+      color: theme.palette.background.default
     }
   },
   selected: {}
@@ -47,7 +47,7 @@ const bottomNavStyles = makeStyles(theme => ({
     width: "100%",
     position: "fixed",
     bottom: 0,
-    backgroundColor: theme.palette.secondary.main
+    backgroundColor: theme.palette.primary.main
   }
 }));
 
