@@ -15,31 +15,30 @@ import "typeface-montserrat";
 import "typeface-inter";
 //TEMA DE LA APP
 const darkTheme = createMuiTheme({
-  typography:{
+  typography: {
     fontFamily: '"Inter", "Montserrat", sans-serif',
     fontSize: 12,
 
-    h1:{
+    h1: {
       fontFamily: '"Montserrat", "Inter", sans-serif',
       fontWeight: 500,
       fontSize: 30
     },
-    h2:{
+    h2: {
       fontFamily: '"Montserrat", "Inter", sans-serif',
       fontWeight: 500,
       fontSize: 24
     },
-    h3:{
+    h3: {
       fontFamily: '"Montserrat", "Inter", sans-serif',
       fontWeight: 500,
       fontSize: 18
     },
-    subtitle1:{
+    subtitle1: {
       fontFamily: '"Montserrat", "Inter", sans-serif',
       fontWeight: 500,
       fontSize: 14
-    },
-
+    }
   },
 
   palette: {
@@ -57,7 +56,7 @@ const darkTheme = createMuiTheme({
       default: "#f8f3f0"
     },
     highlight: {
-      main: '#ff5656'
+      main: "#ff5656"
     }
   }
 });
@@ -66,6 +65,9 @@ const useStyles = makeStyles(theme => ({
   content: {
     backgroundColor: theme.palette.background.default,
     minHeight: "90vh"
+  },
+  title: {
+    color: theme.palette.primary.main
   }
 }));
 

@@ -1,9 +1,6 @@
 import React from "react";
 
-import {
-  makeStyles,
-  ButtonBase
-} from "@material-ui/core";
+import { makeStyles, ButtonBase } from "@material-ui/core";
 
 import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
@@ -48,7 +45,7 @@ const images = [
 ];
 
 const buttonItemMenu = makeStyles(theme => ({
-  mainDiv:{
+  mainDiv: {
     paddingBottom: 100
   },
   root: {
@@ -105,7 +102,7 @@ const buttonItemMenu = makeStyles(theme => ({
     position: "relative",
     padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) +
       6}px`
-  },
+  }
 }));
 
 export default function Carta() {
