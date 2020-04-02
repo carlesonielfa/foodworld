@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb35728787190e8460be711664fcbbb5",
+    "revision": "9e707452b6822f414ca3a18a8bff807e",
     "url": "/fhc6/index.html"
   },
   {
-    "revision": "a27a819c3daea61a5b94",
+    "revision": "fb49f3964d44a2c2ade6",
     "url": "/fhc6/static/css/2.4679350e.chunk.css"
   },
   {
-    "revision": "3f1edcce5ffb05828d79",
+    "revision": "83617dfa5a2da4abfa2d",
     "url": "/fhc6/static/css/main.523f09c5.chunk.css"
   },
   {
-    "revision": "a27a819c3daea61a5b94",
-    "url": "/fhc6/static/js/2.01f704ae.chunk.js"
+    "revision": "fb49f3964d44a2c2ade6",
+    "url": "/fhc6/static/js/2.03801b46.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/fhc6/static/js/2.01f704ae.chunk.js.LICENSE.txt"
+    "url": "/fhc6/static/js/2.03801b46.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3f1edcce5ffb05828d79",
-    "url": "/fhc6/static/js/main.b35fac7d.chunk.js"
+    "revision": "83617dfa5a2da4abfa2d",
+    "url": "/fhc6/static/js/main.bf69e236.chunk.js"
   },
   {
     "revision": "32c0fdfdfd0ef711b5e5",
@@ -184,8 +184,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fhc6/static/media/Inter.var.7e1eda3a.woff2"
   },
   {
-    "revision": "9527928617738a323f7527bc900c4363",
-    "url": "/fhc6/static/media/japones.95279286.jpg"
+    "revision": "bc5aecf39cb32acb5b30230247698113",
+    "url": "/fhc6/static/media/american.bc5aecf3.jpg"
+  },
+  {
+    "revision": "f49e8a406e390829d7cec90e003fedab",
+    "url": "/fhc6/static/media/drinks.f49e8a40.jpg"
+  },
+  {
+    "revision": "8890cf06c9c3cdeed3a6143b362e89ac",
+    "url": "/fhc6/static/media/italian.8890cf06.jpg"
+  },
+  {
+    "revision": "b0647a1cce101af23622488459c49b4a",
+    "url": "/fhc6/static/media/japones.b0647a1c.jpg"
+  },
+  {
+    "revision": "33ee0da6f0a96fddaeb7024ef43685ac",
+    "url": "/fhc6/static/media/mex.33ee0da6.jpeg"
   },
   {
     "revision": "191cc9f50f3b76b9617cb383f19acb7d",
@@ -332,7 +348,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fhc6/static/media/montserrat-latin-900italic.a8ec4957.woff"
   },
   {
-    "revision": "45073c804708d0bc78d454afdd5173f9",
-    "url": "/fhc6/static/media/pizza.45073c80.png"
+    "revision": "fba02b615581815bf0446e4168183e08",
+    "url": "/fhc6/static/media/postres.fba02b61.jpg"
   }
 ]);

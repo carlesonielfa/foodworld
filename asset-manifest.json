@@ -1,29 +1,33 @@
 {
   "files": {
     "main.css": "/fhc6/static/css/main.523f09c5.chunk.css",
-    "main.js": "/fhc6/static/js/main.b35fac7d.chunk.js",
-    "main.js.map": "/fhc6/static/js/main.b35fac7d.chunk.js.map",
+    "main.js": "/fhc6/static/js/main.bf69e236.chunk.js",
+    "main.js.map": "/fhc6/static/js/main.bf69e236.chunk.js.map",
     "runtime-main.js": "/fhc6/static/js/runtime-main.6ae8668f.js",
     "runtime-main.js.map": "/fhc6/static/js/runtime-main.6ae8668f.js.map",
     "static/css/2.4679350e.chunk.css": "/fhc6/static/css/2.4679350e.chunk.css",
-    "static/js/2.01f704ae.chunk.js": "/fhc6/static/js/2.01f704ae.chunk.js",
-    "static/js/2.01f704ae.chunk.js.map": "/fhc6/static/js/2.01f704ae.chunk.js.map",
+    "static/js/2.03801b46.chunk.js": "/fhc6/static/js/2.03801b46.chunk.js",
+    "static/js/2.03801b46.chunk.js.map": "/fhc6/static/js/2.03801b46.chunk.js.map",
     "index.html": "/fhc6/index.html",
-    "precache-manifest.5180ed028011d4af885dbb04da5fc354.js": "/fhc6/precache-manifest.5180ed028011d4af885dbb04da5fc354.js",
+    "precache-manifest.834002e9833165ddeff50749686eb318.js": "/fhc6/precache-manifest.834002e9833165ddeff50749686eb318.js",
     "service-worker.js": "/fhc6/service-worker.js",
     "static/css/2.4679350e.chunk.css.map": "/fhc6/static/css/2.4679350e.chunk.css.map",
     "static/css/main.523f09c5.chunk.css.map": "/fhc6/static/css/main.523f09c5.chunk.css.map",
-    "static/js/2.01f704ae.chunk.js.LICENSE.txt": "/fhc6/static/js/2.01f704ae.chunk.js.LICENSE.txt",
+    "static/js/2.03801b46.chunk.js.LICENSE.txt": "/fhc6/static/js/2.03801b46.chunk.js.LICENSE.txt",
     "static/media/inter.css": "/fhc6/static/media/Inter.var.7e1eda3a.woff2",
-    "static/media/japones.jpg": "/fhc6/static/media/japones.95279286.jpg",
+    "static/media/american.jpg": "/fhc6/static/media/american.bc5aecf3.jpg",
+    "static/media/drinks.jpg": "/fhc6/static/media/drinks.f49e8a40.jpg",
+    "static/media/italian.jpg": "/fhc6/static/media/italian.8890cf06.jpg",
+    "static/media/japones.jpg": "/fhc6/static/media/japones.b0647a1c.jpg",
+    "static/media/mex.jpeg": "/fhc6/static/media/mex.33ee0da6.jpeg",
     "static/media/index.css": "/fhc6/static/media/montserrat-latin-900italic.a8ec4957.woff",
-    "static/media/pizza.png": "/fhc6/static/media/pizza.45073c80.png"
+    "static/media/postres.jpg": "/fhc6/static/media/postres.fba02b61.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6ae8668f.js",
     "static/css/2.4679350e.chunk.css",
-    "static/js/2.01f704ae.chunk.js",
+    "static/js/2.03801b46.chunk.js",
     "static/css/main.523f09c5.chunk.css",
-    "static/js/main.b35fac7d.chunk.js"
+    "static/js/main.bf69e236.chunk.js"
   ]
 }
