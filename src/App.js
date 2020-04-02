@@ -11,9 +11,20 @@ import Inici from "./Inici";
 import Cistella from "./Cistella";
 import Navegacio from "./Navegacio";
 import Italia from "./Italia";
-
+import "typeface-montserrat";
+import "typeface-inter";
 //TEMA DE LA APP
 const darkTheme = createMuiTheme({
+  typography:{
+    fontFamily: '"Inter", "Montserrat", sans-serif',
+    h1:{
+      fontFamily: '"Montserrat", "Inter", sans-serif',
+      fontWeight: 500,
+      fontSize: "2rem"
+    },
+    
+  },
+
   palette: {
     primary: {
       main: "#80d6d1"
@@ -80,7 +91,7 @@ function App() {
       <div>
         <AppBar position="static" color="secondary">
           <Toolbar>
-            <Typography align="left" variant="h5" className={classes.title}>
+            <Typography align="left" variant="h1" className={classes.title}>
               YourMeal
             </Typography>
           </Toolbar>
