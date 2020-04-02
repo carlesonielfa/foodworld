@@ -16,74 +16,16 @@ import Italia from "./Italia";
 // FONTS
 import "typeface-montserrat";
 import "typeface-inter";
-<<<<<<< HEAD
 //TEMA DE LA APP
-
-=======
-
-// APP THEME
-const darkTheme = createMuiTheme({
-  typography: {
-    fontFamily: '"Inter", "Montserrat", sans-serif',
-    fontSize: 12,
-
-    h1: {
-      fontFamily: '"Montserrat", "Inter", sans-serif',
-      fontWeight: 500,
-      fontSize: 30
-    },
-    h2: {
-      fontFamily: '"Montserrat", "Inter", sans-serif',
-      fontWeight: 500,
-      fontSize: 24
-    },
-    h3: {
-      fontFamily: '"Montserrat", "Inter", sans-serif',
-      fontWeight: 500,
-      fontSize: 18
-    },
-    subtitle1: {
-      fontFamily: '"Montserrat", "Inter", sans-serif',
-      fontWeight: 500,
-      fontSize: 14
-    }
-  },
-
-  palette: {
-    primary: {
-      main: "#333333"
-    },
-    secondary: {
-      main: "#727171"
-    },
-    distinctive: {
-      main: "#80d6d1"
-    },
-    background: {
-      paper: "#f8f3f0",
-      default: "#f8f3f0"
-    },
-    highlight: {
-      main: "#ff5656"
-    }
-  }
-});
->>>>>>> 2861927fdf29eb2522425aba49ae8296c02afb0a
 
 const useStyles = makeStyles(theme => ({
   content: {
     backgroundColor: theme.palette.background.default,
     minHeight: "90vh"
-<<<<<<< HEAD
-  }, 
-  title: {
-    color: theme.palette.accent.main
-=======
   },
   title: {
-    color: theme.palette.primary.main,
+    color: theme.palette.accent.main,
     userSelect: "none",
->>>>>>> 2861927fdf29eb2522425aba49ae8296c02afb0a
   }
 }));
 
