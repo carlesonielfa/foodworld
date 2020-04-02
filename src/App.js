@@ -27,14 +27,20 @@ const darkTheme = createMuiTheme({
 
   palette: {
     primary: {
-      main: "#80d6d1"
+      main: "#333333"
     },
     secondary: {
-      main: "#303030"
+      main: "#727171"
+    },
+    distinctive: {
+      main: "#80d6d1"
     },
     background: {
-      paper: "#e5e5e5",
-      default: "#e5e5e5"
+      paper: "#f8f3f0",
+      default: "#f8f3f0"
+    },
+    highlight: {
+      main: '#ff5656'
     }
   }
 });
@@ -50,12 +56,12 @@ const useStyles = makeStyles(theme => ({
 const buttonCartaStyles = makeStyles(theme => ({
   //style pel boto carta
   root: {
-    color: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
     "&$selected": {
-      backgroundColor: theme.palette.primary.light,
-      color: theme.palette.secondary.main
+      backgroundColor: theme.palette.distinctive.light,
+      color: theme.palette.primary.main
     },
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.distinctive.main,
     borderRadius: "50%",
     top: "-35px",
     maxWidth: "0",
@@ -66,7 +72,7 @@ const buttonCartaStyles = makeStyles(theme => ({
 const buttonStyles = makeStyles(theme => ({
   //style pels altres botons
   root: {
-    color: theme.palette.secondary.light,
+    color: theme.palette.primary.light,
     "&$selected": {
       color: "white"
     }
@@ -79,7 +85,7 @@ const bottomNavStyles = makeStyles(theme => ({
     width: "100%",
     position: "fixed",
     bottom: 0,
-    backgroundColor: theme.palette.secondary.main
+    backgroundColor: theme.palette.primary.main
   }
 }));
 
@@ -89,7 +95,7 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <div>
-        <AppBar position="static" color="secondary">
+        <AppBar position="static" color="primary">
           <Toolbar>
             <Typography align="left" variant="h1" className={classes.title}>
               YourMeal
