@@ -1,6 +1,5 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles, Tabs, Tab, Box } from "@material-ui/core";
+import { makeStyles, Tabs, Tab } from "@material-ui/core";
 
 import pizza from "./assets/pizza.png";
 import MenuItem from "./MenuItem";
@@ -85,7 +84,7 @@ export default function Italia() {
 
   return (
     <div className={classes.root}>
-      <img src={pizza} width="100%" height="100px" />
+      <img src={pizza} width="100%" height="100px" alt=""/>
 
       <Tabs
         value={value}

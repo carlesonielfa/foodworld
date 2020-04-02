@@ -34,7 +34,7 @@ export default function MenuItem(props) {
   return (
     <div className={classes.root}>
       <div className={classes.imageContainer}>
-        <img className={classes.image} src={props.image}></img>
+        <img className={classes.image} src={props.image} alt={props.title}></img>
       </div>
       <div className={classes.infoContainer}>
         <Typography variant="h3" align="center">

@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import logo from "./logo.svg";
 import { AppBar, Toolbar, Container, Typography } from "@material-ui/core";
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
