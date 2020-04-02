@@ -1,7 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import {makeStyles} from "@material-ui/core";
-import pizza from "./assets/italian.jpg";
 import QuantitySelect from "./QuantitySelect";
 
 const styles = makeStyles(theme => ({
