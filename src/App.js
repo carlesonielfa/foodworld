@@ -5,14 +5,19 @@ import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import "./App.css";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
+
+// SCREENS
 import Carta from "./Carta";
 import Inici from "./Inici";
 import Cistella from "./Cistella";
 import Navegacio from "./Navegacio";
 import Italia from "./Italia";
+
+// FONTS
 import "typeface-montserrat";
 import "typeface-inter";
-//TEMA DE LA APP
+
+// APP THEME
 const darkTheme = createMuiTheme({
   typography: {
     fontFamily: '"Inter", "Montserrat", sans-serif',
@@ -66,7 +71,8 @@ const useStyles = makeStyles(theme => ({
     minHeight: "90vh"
   },
   title: {
-    color: theme.palette.primary.main
+    color: theme.palette.primary.main,
+    userSelect: "none",
   }
 }));
 

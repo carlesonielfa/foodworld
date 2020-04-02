@@ -15,7 +15,6 @@ const styles = makeStyles(theme => ({
     paddingRight: "15px"
   },
   iconButton: {
-    color: "white",
     padding: 0,
     paddingLeft: 5,
     paddingRight: 5
