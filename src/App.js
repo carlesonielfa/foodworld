@@ -17,12 +17,29 @@ import "typeface-inter";
 const darkTheme = createMuiTheme({
   typography:{
     fontFamily: '"Inter", "Montserrat", sans-serif',
+    fontSize: 12,
+
     h1:{
       fontFamily: '"Montserrat", "Inter", sans-serif',
       fontWeight: 500,
-      fontSize: "2rem"
+      fontSize: 30
     },
-    
+    h2:{
+      fontFamily: '"Montserrat", "Inter", sans-serif',
+      fontWeight: 500,
+      fontSize: 24
+    },
+    h3:{
+      fontFamily: '"Montserrat", "Inter", sans-serif',
+      fontWeight: 500,
+      fontSize: 18
+    },
+    subtitle1:{
+      fontFamily: '"Montserrat", "Inter", sans-serif',
+      fontWeight: 500,
+      fontSize: 14
+    },
+
   },
 
   palette: {
@@ -49,43 +66,6 @@ const useStyles = makeStyles(theme => ({
   content: {
     backgroundColor: theme.palette.background.default,
     minHeight: "90vh"
-  }
-}));
-
-//Estils navegacio
-const buttonCartaStyles = makeStyles(theme => ({
-  //style pel boto carta
-  root: {
-    color: theme.palette.primary.main,
-    "&$selected": {
-      backgroundColor: theme.palette.distinctive.light,
-      color: theme.palette.primary.main
-    },
-    backgroundColor: theme.palette.distinctive.main,
-    borderRadius: "50%",
-    top: "-35px",
-    maxWidth: "0",
-    height: "130%"
-  },
-  selected: {}
-}));
-const buttonStyles = makeStyles(theme => ({
-  //style pels altres botons
-  root: {
-    color: theme.palette.primary.light,
-    "&$selected": {
-      color: "white"
-    }
-  },
-  selected: {}
-}));
-const bottomNavStyles = makeStyles(theme => ({
-  //style per la navigation
-  root: {
-    width: "100%",
-    position: "fixed",
-    bottom: 0,
-    backgroundColor: theme.palette.primary.main
   }
 }));
 

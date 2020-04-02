@@ -48,6 +48,9 @@ const images = [
 ];
 
 const buttonItemMenu = makeStyles(theme => ({
+  mainDiv:{
+    paddingBottom: 100
+  },
   root: {
     display: "flex",
     flexWrap: "wrap",
@@ -109,7 +112,7 @@ export default function Carta() {
   const classes = buttonItemMenu();
 
   return (
-    <div align="center">
+    <div className={classes.mainDiv} align="center">
       {images.map(image => (
         <ButtonBase
           focusRipple
@@ -134,7 +137,7 @@ export default function Carta() {
             >
               {image.title}
               <Typography
-                variant="h6"
+                variant="h3"
                 color="inherit"
                 className={classes.imageSubtitle}
               >

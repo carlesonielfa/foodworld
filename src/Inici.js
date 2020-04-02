@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 export default function Inici(){
     return(
         <div>
+            
             <Typography align="center" variant="h2">
                 Header 2
             </Typography>
