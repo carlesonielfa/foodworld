@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f9b7d304427a18e982c37caf0b00e4d",
+    "revision": "5d6e2d1c5014bd37f3315a6556b59eee",
     "url": "/fhc6/index.html"
   },
   {
-    "revision": "c69e558583e127ed73bd",
+    "revision": "a27a819c3daea61a5b94",
     "url": "/fhc6/static/css/2.4679350e.chunk.css"
   },
   {
-    "revision": "d423e6f2097853c6e1d0",
-    "url": "/fhc6/static/css/main.5f361e03.chunk.css"
+    "revision": "bf60a23910cbf59659b2",
+    "url": "/fhc6/static/css/main.523f09c5.chunk.css"
   },
   {
-    "revision": "c69e558583e127ed73bd",
-    "url": "/fhc6/static/js/2.61d227fd.chunk.js"
+    "revision": "a27a819c3daea61a5b94",
+    "url": "/fhc6/static/js/2.01f704ae.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/fhc6/static/js/2.61d227fd.chunk.js.LICENSE.txt"
+    "url": "/fhc6/static/js/2.01f704ae.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d423e6f2097853c6e1d0",
-    "url": "/fhc6/static/js/main.bf8f729a.chunk.js"
+    "revision": "bf60a23910cbf59659b2",
+    "url": "/fhc6/static/js/main.449a18dc.chunk.js"
   },
   {
     "revision": "32c0fdfdfd0ef711b5e5",
@@ -186,10 +186,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9527928617738a323f7527bc900c4363",
     "url": "/fhc6/static/media/japones.95279286.jpg"
-  },
-  {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/fhc6/static/media/logo.5d5d9eef.svg"
   },
   {
     "revision": "191cc9f50f3b76b9617cb383f19acb7d",
