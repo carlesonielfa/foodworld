@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
 import { AppBar, Toolbar, Container, Typography } from "@material-ui/core";
-import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
-import { ThemeProvider } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import "./App.css";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 
