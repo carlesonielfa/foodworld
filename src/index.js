@@ -48,7 +48,7 @@ const darkTheme = createMuiTheme({
       main: "#80d6d1"
     },
     background: {
-      paper: "#f8f3f0",
+      main: "#f8f3f0",
       default: "#f8f3f0"
     },
     w: {
