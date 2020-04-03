@@ -2,35 +2,12 @@ import React from "react";
 import { makeStyles, Tabs, Tab } from "@material-ui/core";
 
 import pizza from "./assets/italian.jpg";
+import { menu } from "./MenuList";
 import MenuItem from "./MenuItem";
-
-const menu = {
-  pizzas: [
-    {
-      image: pizza,
-      title: "Margarita",
-      description: "Bàsica",
-      price: "9,50€"
-    },
-    {
-      image: pizza,
-      title: "Carbonara",
-      description: "Deliciosa pizza amb ceba, pernil i bacó",
-      price: "9,50€"
-    }
-  ],
-  pastas: [
-    {
-      image: pizza,
-      title: "Bolognesa",
-      description: "MEATBALL",
-      price: "99,99€"
-    }
-  ]
-};
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
+
   var items = menu.pizzas;
 
   if (value === 1) {
@@ -84,7 +61,7 @@ export default function Italia() {
 
   return (
     <div className={classes.root}>
-      <img src={pizza} width="100%" height="100px" alt=""/>
+      <img src={pizza} width="100%" height="100px" alt="" />
 
       <Tabs
         value={value}
