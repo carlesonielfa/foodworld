@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles, Tabs, Tab } from "@material-ui/core";
 
-import pizza from "./assets/italian.jpg";
+import italian from "./assets/italian.jpg";
 import { menu } from "./MenuList";
 import MenuItem from "./MenuItem";
 
@@ -38,7 +38,6 @@ const styles = makeStyles(theme => ({
   root: {
     justifyContent: "center",
     widt: "100%",
-    padding: 5
   },
   tabs: {
     variant: "fullWidth"
@@ -61,7 +60,7 @@ export default function Italia() {
 
   return (
     <div className={classes.root}>
-      <img src={pizza} width="100%" height="100px" alt="" />
+      <img src={italian} width="100%" height="100px" alt="" />
 
       <Tabs
         value={value}
