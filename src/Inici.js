@@ -4,6 +4,8 @@ import { makeStyles, Typography, IconButton, withStyles, ButtonBase } from "@mat
 import Button from '@material-ui/core/Button';
 import { Link } from "react-router-dom";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import carbonara from "./assets/carbonara.png"
+import burrito from "./assets/burrito.png"
 
 const mainMenu = makeStyles(theme => ({
     responsive: {
@@ -37,9 +39,10 @@ const mainMenu = makeStyles(theme => ({
     },
     suggestionContainer:{
         paddingLeft: "3%",
-        paddingTop: "5%",
-        height: "30%",
-        color: theme.palette.primary.main
+        paddingTop: "4%",
+        paddingBot: "1%",
+        height: "25%",
+        color: theme.palette.primary.main,
     }
     }));
 
@@ -80,11 +83,39 @@ const mainMenu = makeStyles(theme => ({
         }
       }));
 
+    const suggestionBox = makeStyles(theme => ({
+        itemBox:{
+            paddingTop: "20px",
+            paddingRight: "20px",
+            height: "100px"
+        },
+        imageContainer: {
+            alignItems: "center",
+            verticalAlign: "middle",
+            float: "left",
+            width: "30%"
+        },
+        image: {
+            width: "110px"
+        },
+        infoContainer: {
+            paddingTop: "20px",
+            width: "65%",
+            float: "right",
+            verticalAlign: "middle",
+            //backgroundColor: "grey"
+        },
+        description: {
+            textAlign: "justify"
+        }
+    }));
+
 
 
 export default function Inici(){
     const classes = mainMenu();
     const buttons = buttonItemMenu();
+    const suggestions = suggestionBox();
     
     return(
         <div>
@@ -118,7 +149,7 @@ export default function Inici(){
                         }}
                     />
                     <span className={buttons.imageButton}>
-                        <Typography variant="h3" color="inherit" className={buttons.imageTitle}>
+                        <Typography variant="h2" color="inherit" className={buttons.imageTitle}>
                         Veure carta
                         </Typography>
                     </span>
@@ -137,7 +168,7 @@ export default function Inici(){
                         }}
                     />
                     <span className={buttons.imageButton}>
-                        <Typography variant="h3" color="inherit" className={buttons.imageTitle}>
+                        <Typography variant="h2" color="inherit" className={buttons.imageTitle}>
                         Repetir comanda
                         </Typography>
                     </span>
@@ -147,7 +178,32 @@ export default function Inici(){
                 <Typography align="left" variant="h2" color="inherit">
                     Suggerències
                 </Typography>
-
+                <div className={suggestions.itemBox}>
+                    <div className={suggestions.imageContainer}>
+                        <img className={suggestions.image} src={carbonara} alt="Carbonara"></img>
+                    </div>
+                    <div className={suggestions.infoContainer}>
+                        <Typography variant="h3" align="left">
+                        Carbonara
+                        </Typography>
+                        <Typography className={suggestions.description}>
+                        La més demanada pels clients
+                        </Typography>
+                    </div>
+                </div>
+                <div className={suggestions.itemBox}>
+                    <div className={suggestions.imageContainer}>
+                        <img className={suggestions.image} src={burrito} alt="Burrito"></img>
+                    </div>
+                    <div className={suggestions.infoContainer}>
+                        <Typography variant="h3" align="left">
+                        Burrito Mixto
+                        </Typography>
+                        <Typography className={suggestions.description}>
+                        Barreja de carn i verds!
+                        </Typography>
+                    </div>
+                </div>
             </div>
 
         </div>

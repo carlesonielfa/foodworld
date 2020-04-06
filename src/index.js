@@ -22,7 +22,7 @@ const darkTheme = createMuiTheme({
     h2:{
       fontFamily: '"Montserrat", "Inter", sans-serif',
       fontWeight: 600,
-      fontSize: 24
+      fontSize: 22
     },
     h3:{
       fontFamily: '"Montserrat", "Inter", sans-serif',

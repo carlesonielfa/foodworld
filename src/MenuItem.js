@@ -11,7 +11,7 @@ const styles = makeStyles(theme => ({
   },
   imageContainer: {
     display: "flex",
-    alignItems: "center",
+    alignItems: "left",
     verticalAlign: "middle",
     paddingRight: "15px"
   },
@@ -36,7 +36,7 @@ export default function MenuItem(props) {
         <img className={classes.image} src={props.image} alt={props.title}></img>
       </div>
       <div className={classes.infoContainer}>
-        <Typography variant="h3" align="center">
+        <Typography variant="h3" align="left">
           {props.title}
         </Typography>
         <Typography className={classes.description}>
