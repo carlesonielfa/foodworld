@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4be97bf47e55d8b8f3e5c16107eed99f",
+    "revision": "0a6e848be2ce07fb9712db9934f96a0b",
     "url": "/fhc6/index.html"
   },
   {
-    "revision": "9ec4ba709119d5fb6f8d",
+    "revision": "d29f27347cd38556ebbf",
     "url": "/fhc6/static/css/2.4679350e.chunk.css"
   },
   {
-    "revision": "30c3e327f1f6a29137b4",
+    "revision": "5be965cc4c2ecb4f9ae4",
     "url": "/fhc6/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "9ec4ba709119d5fb6f8d",
-    "url": "/fhc6/static/js/2.2bb0836d.chunk.js"
+    "revision": "d29f27347cd38556ebbf",
+    "url": "/fhc6/static/js/2.1935983b.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/fhc6/static/js/2.2bb0836d.chunk.js.LICENSE.txt"
+    "url": "/fhc6/static/js/2.1935983b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "30c3e327f1f6a29137b4",
-    "url": "/fhc6/static/js/main.75caead1.chunk.js"
+    "revision": "5be965cc4c2ecb4f9ae4",
+    "url": "/fhc6/static/js/main.d5c0af42.chunk.js"
   },
   {
     "revision": "32c0fdfdfd0ef711b5e5",
@@ -186,6 +186,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bc5aecf39cb32acb5b30230247698113",
     "url": "/fhc6/static/media/american.bc5aecf3.jpg"
+  },
+  {
+    "revision": "0b256bba66ee888a12f5571e76f0ddc2",
+    "url": "/fhc6/static/media/burrito.0b256bba.png"
   },
   {
     "revision": "686d0bd08294cedd0fa19e0e35f1c867",
