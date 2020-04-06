@@ -13,13 +13,16 @@ const mainMenu = makeStyles(theme => ({
     },
     greeting:{
         paddingTop: "7%",
-        width: "80%",
-        float: "left"
+        width: "77%",
+        float: "left",
+        paddingLeft: "3%",
+        color: theme.palette.primary.main
     },
     login:{
         paddingTop: "2%",
         width: "20%",
-        float: "right"
+        float: "right",
+        color: theme.palette.primary.main
     },
     iconButton:{
         padding: 24,
@@ -33,6 +36,7 @@ const mainMenu = makeStyles(theme => ({
         height: "20%",
     },
     suggestionContainer:{
+        paddingLeft: "3%",
         paddingTop: "5%",
         height: "30%",
         color: theme.palette.primary.main
@@ -93,7 +97,7 @@ export default function Inici(){
                 </div>
                 <div class = {classes.login}> 
                     <IconButton className={classes.iconButton} aria-label="account">
-                        <AccountCircleIcon fontSize="large"/>
+                        <AccountCircleIcon fontSize="large" backgroundColor="inherit"/>
                     </IconButton>
                 </div>
             </div>

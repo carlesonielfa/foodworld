@@ -1,38 +1,15 @@
 import React from "react";
 import { makeStyles, Tabs, Tab } from "@material-ui/core";
 
-import pizza from "./assets/italian.jpg";
+import italian from "./assets/italian.jpg";
 import margarita from "./assets/margarita.png";
 import carbonara from "./assets/carbonara.png";
 import MenuItem from "./MenuItem";
-
-const menu = {
-  pizzas: [
-    {
-      image: margarita,
-      title: "Margarita",
-      description: "La de tota la vida",
-      price: "9,50€"
-    },
-    {
-      image: carbonara,
-      title: "Carbonara",
-      description: "Deliciosa pizza amb ceba, pernil i bacó",
-      price: "9,50€"
-    }
-  ],
-  pastas: [
-    {
-      image: pizza,
-      title: "Bolognesa",
-      description: "Pasta amb tomàquet i mandonguilles de vedella",
-      price: "8,70€"
-    }
-  ]
-};
+import { menu } from "./MenuList";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
+
   var items = menu.pizzas;
 
   if (value === 1) {
@@ -63,7 +40,6 @@ const styles = makeStyles(theme => ({
   root: {
     justifyContent: "center",
     widt: "100%",
-    padding: 5
   },
   tabs: {
     variant: "fullWidth"
@@ -86,7 +62,7 @@ export default function Italia() {
 
   return (
     <div className={classes.root}>
-      <img src={pizza} width="100%" height="100px" alt=""/>
+      <img src={italian} width="100%" height="100px" alt="" />
 
       <Tabs
         value={value}

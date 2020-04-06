@@ -20,7 +20,8 @@ import "typeface-inter";
 const useStyles = makeStyles(theme => ({
   content: {
     backgroundColor: theme.palette.background.default,
-    minHeight: "90vh"
+    minHeight: "90vh",
+    padding: 0,
   },
   title: {
     color: theme.palette.accent.main,
