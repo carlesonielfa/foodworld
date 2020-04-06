@@ -2,18 +2,20 @@ import React from "react";
 import { makeStyles, Tabs, Tab } from "@material-ui/core";
 
 import pizza from "./assets/italian.jpg";
+import margarita from "./assets/margarita.png";
+import carbonara from "./assets/carbonara.png";
 import MenuItem from "./MenuItem";
 
 const menu = {
   pizzas: [
     {
-      image: pizza,
+      image: margarita,
       title: "Margarita",
-      description: "Bàsica",
+      description: "La de tota la vida",
       price: "9,50€"
     },
     {
-      image: pizza,
+      image: carbonara,
       title: "Carbonara",
       description: "Deliciosa pizza amb ceba, pernil i bacó",
       price: "9,50€"
@@ -23,8 +25,8 @@ const menu = {
     {
       image: pizza,
       title: "Bolognesa",
-      description: "MEATBALL",
-      price: "99,99€"
+      description: "Pasta amb tomàquet i mandonguilles de vedella",
+      price: "8,70€"
     }
   ]
 };
