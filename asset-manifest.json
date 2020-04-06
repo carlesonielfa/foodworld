@@ -1,33 +1,36 @@
 {
   "files": {
-    "main.css": "/fhc6/static/css/main.523f09c5.chunk.css",
-    "main.js": "/fhc6/static/js/main.bf69e236.chunk.js",
-    "main.js.map": "/fhc6/static/js/main.bf69e236.chunk.js.map",
+    "main.css": "/fhc6/static/css/main.5f361e03.chunk.css",
+    "main.js": "/fhc6/static/js/main.75caead1.chunk.js",
+    "main.js.map": "/fhc6/static/js/main.75caead1.chunk.js.map",
     "runtime-main.js": "/fhc6/static/js/runtime-main.6ae8668f.js",
     "runtime-main.js.map": "/fhc6/static/js/runtime-main.6ae8668f.js.map",
     "static/css/2.4679350e.chunk.css": "/fhc6/static/css/2.4679350e.chunk.css",
-    "static/js/2.03801b46.chunk.js": "/fhc6/static/js/2.03801b46.chunk.js",
-    "static/js/2.03801b46.chunk.js.map": "/fhc6/static/js/2.03801b46.chunk.js.map",
+    "static/js/2.2bb0836d.chunk.js": "/fhc6/static/js/2.2bb0836d.chunk.js",
+    "static/js/2.2bb0836d.chunk.js.map": "/fhc6/static/js/2.2bb0836d.chunk.js.map",
     "index.html": "/fhc6/index.html",
-    "precache-manifest.834002e9833165ddeff50749686eb318.js": "/fhc6/precache-manifest.834002e9833165ddeff50749686eb318.js",
+    "precache-manifest.c042f41e443d3e107062453f69bcf97a.js": "/fhc6/precache-manifest.c042f41e443d3e107062453f69bcf97a.js",
     "service-worker.js": "/fhc6/service-worker.js",
     "static/css/2.4679350e.chunk.css.map": "/fhc6/static/css/2.4679350e.chunk.css.map",
-    "static/css/main.523f09c5.chunk.css.map": "/fhc6/static/css/main.523f09c5.chunk.css.map",
-    "static/js/2.03801b46.chunk.js.LICENSE.txt": "/fhc6/static/js/2.03801b46.chunk.js.LICENSE.txt",
+    "static/css/main.5f361e03.chunk.css.map": "/fhc6/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.2bb0836d.chunk.js.LICENSE.txt": "/fhc6/static/js/2.2bb0836d.chunk.js.LICENSE.txt",
     "static/media/inter.css": "/fhc6/static/media/Inter.var.7e1eda3a.woff2",
     "static/media/american.jpg": "/fhc6/static/media/american.bc5aecf3.jpg",
+    "static/media/carbonara.png": "/fhc6/static/media/carbonara.686d0bd0.png",
     "static/media/drinks.jpg": "/fhc6/static/media/drinks.f49e8a40.jpg",
     "static/media/italian.jpg": "/fhc6/static/media/italian.8890cf06.jpg",
     "static/media/japones.jpg": "/fhc6/static/media/japones.b0647a1c.jpg",
+    "static/media/margarita.png": "/fhc6/static/media/margarita.9b7d130b.png",
     "static/media/mex.jpeg": "/fhc6/static/media/mex.33ee0da6.jpeg",
     "static/media/index.css": "/fhc6/static/media/montserrat-latin-900italic.a8ec4957.woff",
-    "static/media/postres.jpg": "/fhc6/static/media/postres.fba02b61.jpg"
+    "static/media/postres.jpg": "/fhc6/static/media/postres.fba02b61.jpg",
+    "static/media/sharing.jpg": "/fhc6/static/media/sharing.ede60c08.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6ae8668f.js",
     "static/css/2.4679350e.chunk.css",
-    "static/js/2.03801b46.chunk.js",
-    "static/css/main.523f09c5.chunk.css",
-    "static/js/main.bf69e236.chunk.js"
+    "static/js/2.2bb0836d.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.75caead1.chunk.js"
   ]
 }
