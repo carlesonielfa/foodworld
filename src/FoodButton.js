@@ -17,7 +17,7 @@ export default function FoodButton(props){
     const buttons = buttonItemMenu();
     return(
         <div align="center">
-            <ButtonBase className={buttons.root} props>
+            <ButtonBase className={buttons.root} {...props}>
                 <Typography variant="h2" color="inherit">
                     {props.text}
                 </Typography>

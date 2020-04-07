@@ -20,7 +20,7 @@ export default function Cistella() {
       <Typography align="center" variant="h5">
         Cistella
       </Typography>
-      <FoodButton component={Link} to="/fhc6/checkout" text="Realitzar Comanda "/>
+      <FoodButton component={Link} to="/fhc6/checkout" text="Realitzar Comanda"/>
     </div>
   );
 }
