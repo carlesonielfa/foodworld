@@ -1,17 +1,26 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
+import {Typography, Button} from "@material-ui/core/";
+import { Link } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import FoodButton from "./FoodButton";
 
-import { address } from "./MenuList"
+const useStyles = makeStyles((theme) => ({
+  buttonCheckout: {
+    backgroundColor: theme.palette.accent.main,
+    align: "center",
+    textTransform: "none",
+    fontSize: 16
+  },
+}));
 
 export default function Cistella() {
-  var direccion = "./assets/italian.jpg";
+  const classes = useStyles();
   return (
-    <div>
-      <img src={require("./assets/italian.jpg")}></img>
-      <img src={require(direccion)}></img>
+    <div align="center">
       <Typography align="center" variant="h5">
         Cistella
       </Typography>
+      <FoodButton component={Link} to="/fhc6/checkout" text="Realitzar Comanda "/>
     </div>
   );
 }

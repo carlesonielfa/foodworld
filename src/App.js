@@ -11,7 +11,7 @@ import Inici from "./Inici";
 import Cistella from "./Cistella";
 import Navegacio from "./Navegacio";
 import Italia from "./Italia";
-
+import Pagament from "./Pagament";
 // FONTS
 import "typeface-montserrat";
 import "typeface-inter";
@@ -43,8 +43,9 @@ function App() {
           </Toolbar>
         </AppBar>
       </div>
-
+      
       <BrowserRouter>
+        
         <Container className={classes.content}>
           <Switch>
             <Route path="/fhc6/" exact>
@@ -58,6 +59,9 @@ function App() {
             </Route>
             <Route path="/fhc6/italia">
               <Italia />
+            </Route>
+            <Route path="/fhc6/checkout">
+              <Pagament />
             </Route>
           </Switch>
         </Container>

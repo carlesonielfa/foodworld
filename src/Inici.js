@@ -1,11 +1,11 @@
 import React from 'react';
 import sharing from "./assets/sharing.jpg";
 import { makeStyles, Typography, IconButton, withStyles, ButtonBase } from "@material-ui/core";
-import Button from '@material-ui/core/Button';
 import { Link } from "react-router-dom";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import carbonara from "./assets/carbonara.png"
 import burrito from "./assets/burrito.png"
+import FoodButton from './FoodButton';
 
 const mainMenu = makeStyles(theme => ({
     responsive: {
@@ -44,81 +44,44 @@ const mainMenu = makeStyles(theme => ({
         height: "25%",
         color: theme.palette.primary.main,
     }
-    }));
+}));
 
-    const buttonItemMenu = makeStyles(theme => ({
-        mainDiv: {
-          paddingBottom: 100
-        },
-        root: {
-          display: "flex",
-          flexWrap: "wrap",
-          minWidth: 300,
-          width: "100%"
-        },
-        image: {
-          position: "center",
-          height: 40,
-          width: "80%",
-          marginTop: "15px",
-          marginBot: "20px"
-        },
-        imageButton: {
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: theme.palette.primary.main
-        },
-        imageSrc: {
-          position: "absolute",
-          left: 0,
-          right: 0,
-          top: 0,
-          bottom: 0,
-          backgroundSize: "cover",
-          backgroundPosition: "center 40%"
-        },
-        imageTitle: {
-          position: "relative",
-        }
-      }));
 
-    const suggestionBox = makeStyles(theme => ({
-        itemBox:{
-            paddingTop: "20px",
-            paddingRight: "20px",
-            height: "100px"
-        },
-        imageContainer: {
-            alignItems: "center",
-            verticalAlign: "middle",
-            float: "left",
-            width: "30%"
-        },
-        image: {
-            width: "110px"
-        },
-        infoContainer: {
-            paddingTop: "20px",
-            width: "65%",
-            float: "right",
-            verticalAlign: "middle",
-            //backgroundColor: "grey"
-        },
-        description: {
-            textAlign: "justify"
-        }
-    }));
+const suggestionBox = makeStyles(theme => ({
+    itemBox:{
+        paddingTop: "20px",
+        paddingRight: "20px",
+        height: "100px"
+    },
+    imageContainer: {
+        alignItems: "center",
+        verticalAlign: "middle",
+        float: "left",
+        width: "30%"
+    },
+    image: {
+        width: "110px"
+    },
+    infoContainer: {
+        paddingTop: "20px",
+        width: "65%",
+        float: "right",
+        verticalAlign: "middle",
+        //backgroundColor: "grey"
+    },
+    description: {
+        textAlign: "justify"
+    }
+}));
 
 
 
 export default function Inici(){
     const classes = mainMenu();
-    const buttons = buttonItemMenu();
     const suggestions = suggestionBox();
     
     return(
-        <div>
+        <div style={{paddingBottom:'60px'}}>
             <div>
                 <div class = {classes.greeting}> 
                     <Typography align="left" variant="h3">
@@ -136,44 +99,9 @@ export default function Inici(){
             <div align="center">
             <img src={sharing} class={classes.responsive}></img>
             </div>
-            <div align="center">
-                <ButtonBase
-                    className={buttons.image}
-                    component={Link}
-                    to="/fhc6/carta"
-                    >
-                    <span
-                        className={buttons.imageSrc}
-                        style={{
-                            backgroundColor: "#80d6d1"
-                        }}
-                    />
-                    <span className={buttons.imageButton}>
-                        <Typography variant="h2" color="inherit" className={buttons.imageTitle}>
-                        Veure carta
-                        </Typography>
-                    </span>
-                </ButtonBase>
-            </div>
-            <div align="center">
-                <ButtonBase
-                    className={buttons.image}
-                    component={Link}
-                    to="/fhc6/carta"
-                    >
-                    <span
-                        className={buttons.imageSrc}
-                        style={{
-                            backgroundColor: "#80d6d1"
-                        }}
-                    />
-                    <span className={buttons.imageButton}>
-                        <Typography variant="h2" color="inherit" className={buttons.imageTitle}>
-                        Repetir comanda
-                        </Typography>
-                    </span>
-                </ButtonBase>
-            </div>
+            
+            <FoodButton component={Link} to="/fhc6/carta" text="Veure Carta"/>
+            <FoodButton component={Link} to="/fhc6/carta" text="Repetir Comanda"/>
             <div class = {classes.suggestionContainer}>
                 <Typography align="left" variant="h2" color="inherit">
                     Suggerències
