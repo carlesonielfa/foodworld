@@ -11,7 +11,7 @@ import Inici from "./Inici";
 import Cistella from "./Cistella";
 import Navegacio from "./Navegacio";
 import Italia from "./Italia";
-import Pagament from "./Pagament";
+import Checkout from "./Pagament";
 // FONTS
 import "typeface-montserrat";
 import "typeface-inter";
@@ -61,7 +61,7 @@ function App() {
               <Italia />
             </Route>
             <Route path="/fhc6/checkout">
-              <Pagament />
+              <Checkout/>
             </Route>
           </Switch>
         </Container>

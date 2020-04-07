@@ -18,7 +18,7 @@ export default function FoodButton(props){
     return(
         <div align="center">
             <ButtonBase className={buttons.root} {...props}>
-                <Typography variant="h2" color="inherit">
+                <Typography variant="h3" color="inherit">
                     {props.text}
                 </Typography>
             </ButtonBase>

@@ -2,7 +2,7 @@ import React from "react";
 
 import { makeStyles, ButtonBase } from "@material-ui/core";
 
-import Typography from "@material-ui/core/Typography";
+import {Typography} from "@material-ui/core/";
 import { Link } from "react-router-dom";
 
 import { images } from "./CartaList";
