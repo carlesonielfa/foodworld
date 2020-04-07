@@ -10,6 +10,8 @@ import StepConnector from '@material-ui/core/StepConnector';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {FormulariEnviament,FormulariPagament} from './Formularis';
+import Seguiment from "./Seguiment";
+
 const QontoConnector = withStyles((theme) =>({
   alternativeLabel: {
     top: 10,
@@ -108,7 +110,7 @@ function getStepContent(step) {
     case 1:
       return (<FormulariPagament/>);
     case 2:
-      return 'This is the bit I really care about!';
+      return <Seguiment/>;
     default:
       return 'Unknown step';
   }
