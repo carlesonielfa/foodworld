@@ -12,6 +12,8 @@ import Cistella from "./Cistella";
 import Navegacio from "./Navegacio";
 import Italia from "./Italia";
 import Checkout from "./Pagament";
+import Nosaltres from "./Nosaltres";
+import Contacte from "./Contacte";
 // FONTS
 import "typeface-montserrat";
 import "typeface-inter";
@@ -62,6 +64,12 @@ function App() {
             </Route>
             <Route path="/fhc6/checkout">
               <Checkout/>
+            </Route>
+            <Route path="/fhc6/contacte">
+              <Contacte/>
+            </Route>
+            <Route path="/fhc6/nosaltres">
+              <Nosaltres/>
             </Route>
           </Switch>
         </Container>

@@ -11,13 +11,12 @@ const mainMenu = makeStyles(theme => ({
     responsive: {
         width: "100%",
         height: "auto",
-        marginTop: "10px",
     },
     greeting:{
         paddingTop: "7%",
-        width: "77%",
+        width: "67%",
         float: "left",
-        paddingLeft: "3%",
+        paddingLeft: '25px',
         color: theme.palette.primary.main
     },
     login:{
@@ -38,9 +37,8 @@ const mainMenu = makeStyles(theme => ({
         height: "20%",
     },
     suggestionContainer:{
-        paddingLeft: "3%",
-        paddingTop: "4%",
-        paddingBot: "1%",
+        paddingLeft: '25px',
+        paddingTop: "30px",
         height: "25%",
         color: theme.palette.primary.main,
     }
@@ -49,7 +47,7 @@ const mainMenu = makeStyles(theme => ({
 
 const suggestionBox = makeStyles(theme => ({
     itemBox:{
-        paddingTop: "20px",
+        paddingTop: "15px",
         paddingRight: "20px",
         height: "100px"
     },
@@ -74,11 +72,40 @@ const suggestionBox = makeStyles(theme => ({
     }
 }));
 
+const menuButton = makeStyles(theme => ({
+    root: {
+        position: "center",
+        height: 25,
+        width: "80%",
+        marginTop: "10px",
+        marginBot: "20px",
+        marginLeft: "10px",
+        marginRight: "10px",
+        borderRadius: "5px",
+        backgroundColor: theme.palette.secondary.main,
+        color: theme.palette.background.main,
+    },
+    container:{
+        display: "flex",
+        paddingBottom:'50px',
+    },
+    leftContainer:{
+        float: "left",
+        width: "50%",
+        color: theme.palette.background.main,
+    },
+    rightContainer:{
+        float: "right",
+        width: "50%",
+        color: theme.palette.background.main,
+    }
+}));
 
 
 export default function Inici(){
     const classes = mainMenu();
     const suggestions = suggestionBox();
+    const menuButtons = menuButton();
     
     return(
         <div style={{paddingBottom:'60px'}}>
@@ -132,6 +159,27 @@ export default function Inici(){
                         </Typography>
                     </div>
                 </div>
+            </div>
+
+            <div>
+                <div className={menuButtons.container}>
+                    <div align="right" className={menuButtons.rightContainer}>
+                        <ButtonBase component={Link} to="/fhc6/nosaltres" className={menuButtons.root}>
+                            <Typography variant="subtitle1" color="inherit">
+                                Nosaltres
+                            </Typography>
+                        </ButtonBase>
+                    </div>
+                    <div align= "left"  className={menuButtons.rightContainer}>
+                        <ButtonBase component={Link} to="/fhc6/contacte" className={menuButtons.root}>
+                            <Typography variant="subtitle1" color="background">
+                                Contacte
+                            </Typography>
+                        </ButtonBase>
+                    </div>
+                </div>
+
+
             </div>
 
         </div>

@@ -68,20 +68,20 @@ export default function Navegacio() {
     >
       <BottomNavigationAction
         classes={buttonClasses}
-        icon={<HomeRounded />}
+        icon={<HomeRounded style={{ fontSize: 26 }}/>}
         component={Link}
         to="/fhc6/"
       />
       <BottomNavigationAction
         classes={cartaClasses}
         label="Carta"
-        icon={<RestaurantMenuRounded />}
+        icon={<RestaurantMenuRounded style={{ fontSize: 26 }} />}
         component={Link}
         to="/fhc6/carta"
       />
       <BottomNavigationAction
         classes={buttonClasses}
-        icon={<ShoppingCart />}
+        icon={<ShoppingCart style={{ fontSize: 26 }}/>}
         component={Link}
         to="/fhc6/cistella"
       />

@@ -9,7 +9,8 @@ const buttonItemMenu = makeStyles(theme => ({
         width: "80%",
         marginTop: "15px",
         marginBot: "20px",
-        backgroundColor: theme.palette.accent.main
+        backgroundColor: theme.palette.accent.main,
+        borderRadius: "10px"
     },
 }));
 
