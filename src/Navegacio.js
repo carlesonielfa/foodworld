@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 import {
   ShoppingCart,
   HomeRounded,
-  RestaurantMenuRounded
+  RestaurantMenuRounded,
 } from "@material-ui/icons/";
 
-const buttonCartaStyles = makeStyles(theme => ({
+const buttonCartaStyles = makeStyles((theme) => ({
   //style pel boto carta
   // NOTA: per fer-lo rodó s'ha de fer:
   // borderRadius = 2*width = 2*height =
@@ -19,36 +19,36 @@ const buttonCartaStyles = makeStyles(theme => ({
     color: theme.palette.primary.main,
     "&$selected": {
       backgroundColor: theme.palette.accent.light,
-      color: theme.palette.primary.main
+      color: theme.palette.primary.main,
     },
     backgroundColor: theme.palette.accent.main,
     borderRadius: "100%",
-    top: "-35px",
+    top: "-40px",
     maxWidth: "0",
-    height: "130%"
+    height: "143%",
   },
-  selected: {}
+  selected: {},
 }));
 
-const buttonStyles = makeStyles(theme => ({
+const buttonStyles = makeStyles((theme) => ({
   //style pels altres botons
   root: {
     color: theme.palette.secondary.light,
     "&$selected": {
-      color: theme.palette.background.default
-    }
+      color: theme.palette.background.default,
+    },
   },
-  selected: {}
+  selected: {},
 }));
 
-const bottomNavStyles = makeStyles(theme => ({
+const bottomNavStyles = makeStyles((theme) => ({
   //style per la navigation
   root: {
     width: "100%",
     position: "fixed",
     bottom: 0,
-    backgroundColor: theme.palette.primary.main
-  }
+    backgroundColor: theme.palette.primary.main,
+  },
 }));
 
 export default function Navegacio() {
@@ -68,7 +68,7 @@ export default function Navegacio() {
     >
       <BottomNavigationAction
         classes={buttonClasses}
-        icon={<HomeRounded style={{ fontSize: 26 }}/>}
+        icon={<HomeRounded style={{ fontSize: 26 }} />}
         component={Link}
         to="/fhc6/"
       />
@@ -81,7 +81,7 @@ export default function Navegacio() {
       />
       <BottomNavigationAction
         classes={buttonClasses}
-        icon={<ShoppingCart style={{ fontSize: 26 }}/>}
+        icon={<ShoppingCart style={{ fontSize: 26 }} />}
         component={Link}
         to="/fhc6/cistella"
       />
