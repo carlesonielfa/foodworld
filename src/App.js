@@ -19,7 +19,7 @@ import "typeface-montserrat";
 import "typeface-inter";
 //TEMA DE LA APP
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   content: {
     backgroundColor: theme.palette.background.default,
     minHeight: "90vh",
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   title: {
     color: theme.palette.accent.main,
     userSelect: "none",
-  }
+  },
 }));
 
 function App() {
@@ -45,9 +45,8 @@ function App() {
           </Toolbar>
         </AppBar>
       </div>
-      
+
       <BrowserRouter>
-        
         <Container className={classes.content}>
           <Switch>
             <Route path="/fhc6/" exact>
@@ -63,20 +62,20 @@ function App() {
               <Italia />
             </Route>
             <Route path="/fhc6/checkout">
-              <Checkout/>
+              <Checkout />
             </Route>
             <Route path="/fhc6/contacte">
-              <Contacte/>
+              <Contacte />
             </Route>
             <Route path="/fhc6/nosaltres">
-              <Nosaltres/>
+              <Nosaltres />
             </Route>
           </Switch>
         </Container>
 
         <Navegacio />
       </BrowserRouter>
-      </div>
+    </div>
   );
 }
 

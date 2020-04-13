@@ -2,7 +2,7 @@ import React from "react";
 
 import { makeStyles, ButtonBase } from "@material-ui/core";
 
-import {Typography} from "@material-ui/core/";
+import { Typography } from "@material-ui/core/";
 import { Link } from "react-router-dom";
 
 import { images } from "./CartaList";
@@ -10,15 +10,15 @@ import { images } from "./CartaList";
 // LINK PER PODER ENTENDRE AIXÔ:
 // https://material-ui.com/components/buttons/
 
-const buttonItemMenu = makeStyles(theme => ({
+const buttonItemMenu = makeStyles((theme) => ({
   mainDiv: {
-    paddingBottom: 100
+    paddingBottom: 100,
   },
   root: {
     display: "flex",
     flexWrap: "wrap",
     minWidth: 300,
-    width: "100%"
+    width: "100%",
   },
   image: {
     position: "relative",
@@ -29,16 +29,16 @@ const buttonItemMenu = makeStyles(theme => ({
     "&:hover, &$focusVisible": {
       zIndex: 1,
       "& $imageBackdrop": {
-        opacity: 0.25
-      }
-    }
+        opacity: 0.25,
+      },
+    },
   },
   focusVisible: {},
   imageButton: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    color: theme.palette.common.white
+    color: theme.palette.common.white,
   },
   imageSrc: {
     position: "absolute",
@@ -47,7 +47,7 @@ const buttonItemMenu = makeStyles(theme => ({
     top: 0,
     bottom: 0,
     backgroundSize: "cover",
-    backgroundPosition: "center 40%"
+    backgroundPosition: "center 40%",
   },
   imageBackdrop: {
     position: "absolute",
@@ -57,18 +57,20 @@ const buttonItemMenu = makeStyles(theme => ({
     bottom: 0,
     backgroundColor: theme.palette.common.black,
     opacity: 0.55,
-    transition: theme.transitions.create("opacity")
+    transition: theme.transitions.create("opacity"),
   },
   imageTitle: {
     position: "relative",
-    padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) +
-      6}px`
+    padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${
+      theme.spacing(1) + 6
+    }px`,
   },
   imageSubtitle: {
     position: "relative",
-    padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) +
-      6}px`
-  }
+    padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${
+      theme.spacing(1) + 6
+    }px`,
+  },
 }));
 
 export default function Carta() {
@@ -76,7 +78,7 @@ export default function Carta() {
 
   return (
     <div className={classes.mainDiv} align="center">
-      {images.map(image => (
+      {images.map((image) => (
         <ButtonBase
           focusRipple
           key={image.title}
@@ -88,7 +90,7 @@ export default function Carta() {
           <span
             className={classes.imageSrc}
             style={{
-              backgroundImage: `url(${image.file})`
+              backgroundImage: `url(${image.file})`,
             }}
           />
           <span className={classes.imageBackdrop} />

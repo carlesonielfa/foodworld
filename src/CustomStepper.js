@@ -1,30 +1,30 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
-import Stepper from '@material-ui/core/Stepper';
-import Step from '@material-ui/core/Step';
-import StepLabel from '@material-ui/core/StepLabel';
-import Check from '@material-ui/icons/Check';
-import StepConnector from '@material-ui/core/StepConnector';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import {FormulariEnviament,FormulariPagament} from './Formularis';
+import React from "react";
+import PropTypes from "prop-types";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
+import clsx from "clsx";
+import Stepper from "@material-ui/core/Stepper";
+import Step from "@material-ui/core/Step";
+import StepLabel from "@material-ui/core/StepLabel";
+import Check from "@material-ui/icons/Check";
+import StepConnector from "@material-ui/core/StepConnector";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import { FormulariEnviament, FormulariPagament } from "./Formularis";
 import Seguiment from "./Seguiment";
 
-const QontoConnector = withStyles((theme) =>({
+const QontoConnector = withStyles((theme) => ({
   alternativeLabel: {
     top: 10,
-    left: 'calc(-50% + 16px)',
-    right: 'calc(50% + 16px)',
+    left: "calc(-50% + 16px)",
+    right: "calc(50% + 16px)",
   },
   active: {
-    '& $line': {
+    "& $line": {
       borderColor: theme.palette.accent.main,
     },
   },
   completed: {
-    '& $line': {
+    "& $line": {
       borderColor: theme.palette.accent.main,
     },
   },
@@ -35,12 +35,12 @@ const QontoConnector = withStyles((theme) =>({
   },
 }))(StepConnector);
 
-const useQontoStepIconStyles = makeStyles((theme) =>({
+const useQontoStepIconStyles = makeStyles((theme) => ({
   root: {
     color: theme.palette.primary.light,
-    display: 'flex',
+    display: "flex",
     height: 22,
-    alignItems: 'center',
+    alignItems: "center",
   },
   active: {
     color: theme.palette.accent.main,
@@ -48,8 +48,8 @@ const useQontoStepIconStyles = makeStyles((theme) =>({
   circle: {
     width: 10,
     height: 10,
-    borderRadius: '50%',
-    backgroundColor: 'currentColor',
+    borderRadius: "50%",
+    backgroundColor: "currentColor",
   },
   completed: {
     color: theme.palette.accent.main,
@@ -68,7 +68,11 @@ function QontoStepIcon(props) {
         [classes.active]: active,
       })}
     >
-      {completed ? <Check className={classes.completed} /> : <div className={classes.circle} />}
+      {completed ? (
+        <Check className={classes.completed} />
+      ) : (
+        <div className={classes.circle} />
+      )}
     </div>
   );
 }
@@ -80,12 +84,12 @@ QontoStepIcon.propTypes = {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    width: "100%",
   },
-  buttonContainer:{
+  buttonContainer: {
     position: "fixed",
     left: "50%",
-    bottom: "12%"
+    bottom: "12%",
   },
   button: {
     marginRight: theme.spacing(1),
@@ -94,9 +98,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
   },
-  stepper:{
-      backgroundColor: theme.palette.background.main
-  }
+  stepper: {
+    backgroundColor: theme.palette.background.main,
+  },
 }));
 
 function getSteps() {
@@ -106,13 +110,13 @@ function getSteps() {
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return (<FormulariEnviament/>);
+      return <FormulariEnviament />;
     case 1:
-      return (<FormulariPagament/>);
+      return <FormulariPagament />;
     case 2:
-      return <Seguiment/>;
+      return <Seguiment />;
     default:
-      return 'Unknown step';
+      return "Unknown step";
   }
 }
 
@@ -135,7 +139,12 @@ export default function CustomStepper() {
 
   return (
     <div className={classes.root}>
-      <Stepper alternativeLabel activeStep={activeStep} connector={<QontoConnector />} className={classes.stepper}>
+      <Stepper
+        alternativeLabel
+        activeStep={activeStep}
+        connector={<QontoConnector />}
+        className={classes.stepper}
+      >
         {steps.map((label) => (
           <Step key={label}>
             <StepLabel StepIconComponent={QontoStepIcon}>{label}</StepLabel>
@@ -154,9 +163,15 @@ export default function CustomStepper() {
           </div>
         ) : (
           <div>
-            <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+            <Typography className={classes.instructions}>
+              {getStepContent(activeStep)}
+            </Typography>
             <div className={classes.buttonContainer}>
-              <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
+              <Button
+                disabled={activeStep === 0}
+                onClick={handleBack}
+                className={classes.button}
+              >
                 Enrere
               </Button>
               <Button
@@ -165,7 +180,7 @@ export default function CustomStepper() {
                 onClick={handleNext}
                 className={classes.button}
               >
-                {activeStep === steps.length - 1 ? 'Valorar' : 'Següent'}
+                {activeStep === steps.length - 1 ? "Valorar" : "Següent"}
               </Button>
             </div>
           </div>

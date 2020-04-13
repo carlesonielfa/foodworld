@@ -10,21 +10,21 @@ export const menu = {
       image: margarita,
       title: "Margarita",
       description: "Bàsica",
-      price: "9,50€"
+      price: "9,50€",
     },
     {
       image: carbonara,
       title: "Carbonara",
       description: "Deliciosa pizza amb ceba, pernil i bacó",
-      price: "9,50€"
-    }
+      price: "9,50€",
+    },
   ],
   pastas: [
     {
       image: pizza,
       title: "Bolognesa",
       description: "MEATBALL",
-      price: "99,99€"
-    }
-  ]
+      price: "99,99€",
+    },
+  ],
 };

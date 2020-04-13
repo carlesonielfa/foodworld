@@ -1,11 +1,9 @@
 import React from "react";
 import { makeStyles, Tabs, Tab } from "@material-ui/core";
 
-import italian from "./assets/italian.jpg";
-import margarita from "./assets/margarita.png";
-import carbonara from "./assets/carbonara.png";
 import MenuItem from "./MenuItem";
 import { menu } from "./MenuList";
+import italian from "./assets/italian.jpg";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -24,7 +22,7 @@ function TabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {items.map(item => (
+      {items.map((item) => (
         <MenuItem
           image={item.image}
           title={item.title}
@@ -36,19 +34,19 @@ function TabPanel(props) {
   );
 }
 
-const styles = makeStyles(theme => ({
+const styles = makeStyles((theme) => ({
   root: {
     justifyContent: "center",
     widt: "100%",
   },
   tabs: {
-    variant: "fullWidth"
+    variant: "fullWidth",
     //backgroundColor: "#f9fbe7"
   },
   tab: {
     paddingRight: "30px",
-    paddingLeft: "30px"
-  }
+    paddingLeft: "30px",
+  },
 }));
 
 export default function Italia() {
