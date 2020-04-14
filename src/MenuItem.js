@@ -46,7 +46,7 @@ export default function MenuItem(props) {
         <Typography className={classes.description}>
           {props.description}
         </Typography>
-        <QuantitySelect price={props.price} />
+        <QuantitySelect price={props.price} id={props.id}/>
       </div>
     </div>
   );

@@ -5,8 +5,11 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
+import {Provider} from "react-redux";
+import {createStore} from "redux";
 import "typeface-montserrat";
 import "typeface-inter";
+import cartReducer from "./reducers/cartReducer"
 
 const darkTheme = createMuiTheme({
   typography: {
@@ -45,6 +48,9 @@ const darkTheme = createMuiTheme({
     accent: {
       main: "#80d6d1",
     },
+    error: {
+      main: "#80d6d1",
+    },
     background: {
       main: "#f8f3f0",
       default: "#f8f3f0",
@@ -55,11 +61,14 @@ const darkTheme = createMuiTheme({
   },
 });
 
+const store = createStore(cartReducer);
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={darkTheme}>
-      <App />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={darkTheme}>
+        <App />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );

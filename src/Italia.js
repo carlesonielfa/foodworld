@@ -2,17 +2,15 @@ import React from "react";
 import { makeStyles, Tabs, Tab } from "@material-ui/core";
 
 import MenuItem from "./MenuItem";
-import { menu } from "./MenuList";
 import italian from "./assets/italian.jpg";
+import { useSelector } from "react-redux";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
+  const menu = useSelector((state)=>{    
 
-  var items = menu.pizzas;
-
-  if (value === 1) {
-    items = menu.pastas;
-  }
+    return (value===1) ? state.items.pastas : state.items.pizzas
+  });
 
   return (
     <div
@@ -22,12 +20,13 @@ function TabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {items.map((item) => (
+      {menu.map((item) => (
         <MenuItem
           image={item.image}
           title={item.title}
           description={item.description}
           price={item.price}
+          id={item.id}
         />
       ))}
     </div>

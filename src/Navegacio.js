@@ -10,6 +10,8 @@ import {
   HomeRounded,
   RestaurantMenuRounded,
 } from "@material-ui/icons/";
+import { useSelector } from "react-redux";
+import { Badge } from "@material-ui/core";
 
 const buttonCartaStyles = makeStyles((theme) => ({
   //style pel boto carta
@@ -48,10 +50,13 @@ const bottomNavStyles = makeStyles((theme) => ({
     position: "fixed",
     bottom: 0,
     backgroundColor: theme.palette.primary.main,
-  },
+  }
 }));
 
 export default function Navegacio() {
+  const cartQuantity = useSelector((state)=>{
+    return state.totalItems;
+  });
   const cartaClasses = buttonCartaStyles();
   const buttonClasses = buttonStyles();
   const navClasses = bottomNavStyles();
@@ -81,7 +86,11 @@ export default function Navegacio() {
       />
       <BottomNavigationAction
         classes={buttonClasses}
-        icon={<ShoppingCart style={{ fontSize: 26 }} />}
+        icon={
+          <Badge badgeContent={cartQuantity} color="error" >
+            <ShoppingCart  style={{ fontSize: 26 }}/>
+          </Badge>
+        }
         component={Link}
         to="/fhc6/cistella"
       />
