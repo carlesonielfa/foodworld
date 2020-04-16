@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Tabs, Tab } from "@material-ui/core";
+import { makeStyles, Tabs, Tab, Typography } from "@material-ui/core";
 
 import MenuItem from "./MenuItem";
 import italian from "./assets/italian.jpg";
@@ -36,7 +36,7 @@ function TabPanel(props) {
 const styles = makeStyles((theme) => ({
   root: {
     justifyContent: "center",
-    widt: "100%",
+    width: "100%",
   },
   tabs: {
     variant: "fullWidth",
@@ -46,6 +46,28 @@ const styles = makeStyles((theme) => ({
     paddingRight: "30px",
     paddingLeft: "30px",
   },
+  media: {
+    height: 100,
+    objectFit: "cover",
+    width: "100%",
+    filter: "brightness(55%);"
+  },
+  imageContainer:{
+    position:"relative",
+    textAlign: "center",
+    color: theme.palette.common.white
+  },
+  imageContent:{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: theme.palette.common.white,
+  },
+  title:{
+    position: "relative",
+    top: "-85px",
+    marginBottom: "-70px"
+  }
 }));
 
 export default function Italia() {
@@ -59,8 +81,12 @@ export default function Italia() {
 
   return (
     <div className={classes.root}>
-      <img src={italian} width="100%" height="100px" alt="" />
-
+      <div className={classes.imageContainer}>
+        <img className={classes.media} src={italian}/>
+        <div className={classes.imageContent}>
+          <Typography className={classes.title} color="inherit" variant="h2">ITALIÀ</Typography>
+        </div>
+      </div>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -72,8 +98,8 @@ export default function Italia() {
         <Tab label="Antispasti" className={classes.tab} />
       </Tabs>
 
-      <TabPanel value={value} index={0} />
-      <TabPanel value={value} index={1} />
+        <TabPanel value={value} index={0} />
+        <TabPanel value={value} index={1} />
       <TabPanel value={value} index={2} />
     </div>
   );
