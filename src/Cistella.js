@@ -35,7 +35,7 @@ export default function Cistella() {
         />
       ))}
       <Typography className={classes.root} align="right" variant="h3">
-        Total: {total} €
+        Total: {total.toFixed(2)} €
       </Typography>
       <FoodButton
         component={Link}
