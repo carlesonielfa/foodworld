@@ -135,7 +135,7 @@ export default function Inici() {
       <FoodButton component={Link} to="/fhc6/carta" text="Repetir Comanda" />
       <div class={classes.suggestionContainer}>
         <Typography align="left" variant="h2" color="inherit">
-          Suggerències
+          Suggermients
         </Typography>
         <div className={suggestions.itemBox}>
           <div className={suggestions.imageContainer}>

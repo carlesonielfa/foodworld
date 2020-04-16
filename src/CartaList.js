@@ -13,7 +13,7 @@ export const images = [
   },
   {
     file: japones,
-    title: "JAPONÉS",
+    title: "JAPONÈS",
     subtitle: "Sushi, Noodles",
   },
   {
