@@ -102,7 +102,6 @@ export default function Carta() {
             >
               {image.title}
               <Typography
-                variant="h3"
                 color="inherit"
                 className={classes.imageSubtitle}
               >
