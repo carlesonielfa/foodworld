@@ -6,6 +6,9 @@ import FoodButton from "./FoodButton";
 import { useSelector } from "react-redux";
 import MenuItem from "./MenuItem";
 const useStyles = makeStyles((theme) => ({
+  mainDiv: {
+    paddingBottom: "110px",
+  },
   root: {
     padding: "20px",
     paddingLeft: "40px",
@@ -21,7 +24,7 @@ export default function Cistella() {
     return state.addedItems;
   });
   return (
-    <div align="center">
+    <div align="center" className={classes.mainDiv}>
       <Typography className={classes.root} align="left" variant="h2">
         La teva cistella
       </Typography>

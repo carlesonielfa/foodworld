@@ -13,6 +13,9 @@ import burrito from "./assets/burrito.png";
 import FoodButton from "./FoodButton";
 
 const mainMenu = makeStyles((theme) => ({
+  mainDiv: {
+    paddingBottom: "60px",
+  },
   responsive: {
     width: "100%",
     height: "auto",
@@ -111,7 +114,7 @@ export default function Inici() {
   const menuButtons = menuButton();
 
   return (
-    <div style={{ paddingBottom: "60px" }}>
+    <div class={classes.mainDiv}>
       <div>
         <div class={classes.greeting}>
           <Typography align="left" variant="h3">
