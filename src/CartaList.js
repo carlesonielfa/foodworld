@@ -29,11 +29,9 @@ export const images = [
   {
     file: drinks,
     title: "BEGUDES",
-    subtitle: "Burritos, Tacos, Acompañamientos",
   },
   {
     file: postres,
     title: "POSTRES",
-    subtitle: "Burritos, Tacos, Acompañamientos",
   },
 ];

@@ -1,36 +1,5 @@
-import pizza from "../assets/italian.jpg";
-import margarita from "../assets/margarita.png";
-import carbonara from "../assets/carbonara.png";
-
+import menu from "../MenuList";
 export const address = "../assets/italian.jpg";
-
-const menu = {
-  pizzas: [
-    {
-      id: 0,
-      image: margarita,
-      title: "Margarita",
-      description: "Bàsica",
-      price: 9.5,
-    },
-    {
-      id: 1,
-      image: carbonara,
-      title: "Carbonara",
-      description: "Deliciosa pizza amb ceba, pernil i bacó",
-      price: 9.5,
-    },
-  ],
-  pastas: [
-    {
-      id: 2,
-      image: pizza,
-      title: "Bolognesa",
-      description: "MEATBALL",
-      price: 99.99,
-    },
-  ],
-};
 
 const initState = {
   items: menu,
@@ -38,6 +7,7 @@ const initState = {
   total: 0,
   totalItems: 0,
 };
+
 const cartReducer = (state = initState, action) => {
   if (action.type === "ADD_TO_CART") {
     //Find item to add and if the item was added already
