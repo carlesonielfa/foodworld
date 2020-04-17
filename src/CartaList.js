@@ -8,32 +8,32 @@ import drinks from "./assets/drinks.jpg";
 export const images = [
   {
     file: italian,
-    title: "Italià",
+    title: "ITALIÀ",
     subtitle: "Pizza, Pasta, Antipasti",
   },
   {
     file: japones,
-    title: "Japonés",
+    title: "JAPONÈS",
     subtitle: "Sushi, Noodles",
   },
   {
     file: american,
-    title: "Americà",
+    title: "AMERICÀ",
     subtitle: "Burgers, Meats, Sides",
   },
   {
     file: mex,
-    title: "Mexicà",
+    title: "MEXICÀ",
     subtitle: "Burritos, Tacos, Acompañamientos",
   },
   {
     file: drinks,
-    title: "Begudes",
+    title: "BEGUDES",
     subtitle: "Burritos, Tacos, Acompañamientos",
   },
   {
     file: postres,
-    title: "Postres",
+    title: "POSTRES",
     subtitle: "Burritos, Tacos, Acompañamientos",
   },
 ];
