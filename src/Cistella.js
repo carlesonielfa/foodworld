@@ -14,11 +14,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Cistella() {
   const classes = useStyles();
-  const total = useSelector((state)=>{    
-    return state.total
+  const total = useSelector((state) => {
+    return state.total;
   });
-  const items = useSelector((state)=>{    
-    return state.addedItems
+  const items = useSelector((state) => {
+    return state.addedItems;
   });
   return (
     <div align="center">
@@ -35,7 +35,7 @@ export default function Cistella() {
         />
       ))}
       <Typography className={classes.root} align="right" variant="h3">
-        Total: {total} €
+        Total: {total.toFixed(2)} €
       </Typography>
       <FoodButton
         component={Link}
