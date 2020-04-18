@@ -15,7 +15,7 @@ import cartReducer from "./reducers/cartReducer"
 
 const darkTheme = createMuiTheme({
   typography: {
-    fontFamily: '"Lato", "Montserrat", sans-serif',
+    fontFamily: '"Raleway", "Montserrat", sans-serif',
     fontSize: 12,
 
     h1: {
