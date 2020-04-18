@@ -7,6 +7,10 @@ import bbq from "./assets/bbq.png";
 import bolognese from "./assets/bolognese.png";
 import formaggi from "./assets/formaggi.png";
 import pesto from "./assets/pesto.png";
+import lasagna from "./assets/lasagna.png";
+import carpaccio from "./assets/carpaccio.png";
+import caprese from "./assets/caprese.png";
+import parmiggiana from "./assets/parmigiana.png";
 
 const menu = {
   pizza: [
@@ -26,30 +30,30 @@ const menu = {
     },
     {
       id: 12,
-      image: carbonara,
-      title: "Prosciutto",
-      description: "Clàssica pizza de pernil i formatge amb base de tomàquet",
+      image: quatrof,
+      title: "4 Formaggio",
+      description: "Clàssica pizza de quatre formatges: mozarella, gorgonzola, parmesà i robiola",
       price: 11,
     },
     {
       id: 13,
-      image: carbonara,
+      image: bbq,
       title: "Barbecue",
-      description: "Pizza pels amans de la carn, amb ceba i blat de moro",
+      description: "Pizza pels amants de la carn, amb ceba i blat de moro",
       price: 11,
     },
   ],
   pasta: [
     {
       id: 20,
-      image: pizza,
-      title: "Spaghetti Bolognese",
-      description: "MEATBALL",
-      price: 13,
+      image: bolognese,
+      title: "Tagliatelle Bolognese",
+      description: "Tallarins amb salsa de tomàquet i carn",
+      price: 12,
     },
     {
       id: 21,
-      image: pizza,
+      image: carbonarap,
       title: "Tagliatelle Carbonara",
       description:
         "Tallarins amb salsa carbonara (ous, bacó i formatge parmesà)",
@@ -57,46 +61,46 @@ const menu = {
     },
     {
       id: 22,
-      image: pizza,
-      title: "Rigatoni al Pesto",
+      image: pesto,
+      title: "Spaghetti al Pesto",
       description:
-        "Macarrons grans amb salsa de pesto (oli, pinyols i alfàbrega)",
+        "Espaguetis  amb salsa de pesto (oli, pinyols i alfàbrega)",
       price: 13,
     },
     {
       id: 23,
-      image: pizza,
+      image: formaggi,
       title: "Penne 4 Formaggi",
       description:
         "Macarrons amb salsa de quatre formatges: mozarella, gorgonzola, parmesà i robiola",
-      price: 13,
+      price: 14,
     },
   ],
   antipasti: [
     {
       id: 30,
-      image: pizza,
+      image: caprese,
       title: "Insalata Capresse",
       description: "Fresca amanida de tomàquet i mozzarella",
       price: 9,
     },
     {
       id: 31,
-      image: pizza,
+      image: lasagna,
       title: "Lasagna Campagnola",
       description: "Lasanya de carn, mozarella i salsa de tomàquet",
       price: 13,
     },
     {
       id: 32,
-      image: pizza,
+      image: parmiggiana,
       title: "Parmigiana",
       description: "Laminat d'albergínia amb salsa de tomàquet i alfàbrega",
       price: 12,
     },
     {
       id: 33,
-      image: pizza,
+      image: carpaccio,
       title: "Carpaccio di tonno",
       description: "Tonyina crua tallada en fines làmines",
       price: 14,
