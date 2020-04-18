@@ -1,6 +1,12 @@
 import pizza from "./assets/italian.jpg";
 import margarita from "./assets/margarita.png";
 import carbonara from "./assets/carbonara.png";
+import carbonarap from "./assets/carbonarap.png";
+import quatrof from "./assets/4quesos.png";
+import bbq from "./assets/bbq.png";
+import bolognese from "./assets/bolognese.png";
+import formaggi from "./assets/formaggi.png";
+import pesto from "./assets/pesto.png";
 
 const menu = {
   pizza: [

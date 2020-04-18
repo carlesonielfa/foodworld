@@ -7,6 +7,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import PlaceIcon from "@material-ui/icons/Place";
 import RoomIcon from "@material-ui/icons/Room";
 import { Grid } from "@material-ui/core";
+import map from "./assets/map.png";
 
 import GoogleMap from "google-map-react";
 
@@ -18,8 +19,13 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: "20px",
   },
   contactBox: {
-    paddingLeft: "40px",
+    paddingLeft: "20px",
   },
+  responsive: {
+    paddingTop: "30px",
+    width: "100%",
+    height: "auto",
+  }
 }));
 
 const Marker = ({ title }) => (
@@ -42,7 +48,7 @@ const items = [
   },
   {
     icon: PlaceIcon,
-    text: "Av. Diagonal 45,\nBarcelona",
+    text: "Gran Via 545,\nBarcelona",
   },
 ];
 
@@ -72,19 +78,9 @@ export default function Contacte() {
         </div>
       ))}
 
-      <div style={{ width: "100%", height: "70%", align: "center" }}>
-        <GoogleMap
-          bootstrapURLKeys={{ key: "AIzaSyCW-ZfgFahCgZlHqbFfpUq8yuGCqFF_T5Y" }}
-          center={{ lat: 41.3876167, lng: 2.1617593 }}
-          zoom={15}
-        >
-          <Marker
-            title={"Direcció d'entrega"}
-            lat={41.3866167}
-            lng={2.1607593}
-          />
-        </GoogleMap>
+      <div align="center">
+        <img src={map} class={classes.responsive} alt=""></img>
       </div>
-    </div>
+      </div>
   );
 }

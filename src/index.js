@@ -9,11 +9,13 @@ import {Provider} from "react-redux";
 import {createStore} from "redux";
 import "typeface-montserrat";
 import "typeface-inter";
+import "typeface-lato";
+import "typeface-raleway";
 import cartReducer from "./reducers/cartReducer"
 
 const darkTheme = createMuiTheme({
   typography: {
-    fontFamily: '"Inter", "Montserrat", sans-serif',
+    fontFamily: '"Lato", "Montserrat", sans-serif',
     fontSize: 12,
 
     h1: {
