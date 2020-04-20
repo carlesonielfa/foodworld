@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ba41e317cb66ca01cb56042dde76ad7",
+    "revision": "c4de5d3a914f8dfe137296b7fabfd50c",
     "url": "/fhc6/index.html"
   },
   {
-    "revision": "a04b80da38f570407f24",
-    "url": "/fhc6/static/css/2.727f0f9d.chunk.css"
+    "revision": "6dfd9aea85ebafbfeef1",
+    "url": "/fhc6/static/css/2.121ad6a5.chunk.css"
   },
   {
-    "revision": "e7dfbf8e013f5055ca4b",
+    "revision": "150c0af36720150de6fd",
     "url": "/fhc6/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "a04b80da38f570407f24",
-    "url": "/fhc6/static/js/2.9cfabd7b.chunk.js"
+    "revision": "6dfd9aea85ebafbfeef1",
+    "url": "/fhc6/static/js/2.fb733c05.chunk.js"
   },
   {
     "revision": "3a08a7c8f8e6231522abe29a929e6912",
-    "url": "/fhc6/static/js/2.9cfabd7b.chunk.js.LICENSE.txt"
+    "url": "/fhc6/static/js/2.fb733c05.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e7dfbf8e013f5055ca4b",
-    "url": "/fhc6/static/js/main.22293b7b.chunk.js"
+    "revision": "150c0af36720150de6fd",
+    "url": "/fhc6/static/js/main.626a71f0.chunk.js"
   },
   {
     "revision": "32c0fdfdfd0ef711b5e5",
@@ -186,6 +186,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7e1eda3a103b1d4d14c9dea4ced21bfb",
     "url": "/fhc6/static/media/Inter.var.7e1eda3a.woff2"
+  },
+  {
+    "revision": "20c1791bf288a3e691adf4661fa3ba6d",
+    "url": "/fhc6/static/media/aigua.20c1791b.png"
   },
   {
     "revision": "bc5aecf39cb32acb5b30230247698113",
@@ -480,6 +484,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fhc6/static/media/parmigiana.0eb2b6a2.png"
   },
   {
+    "revision": "e93ca1b334b738ae46525a2efc98f965",
+    "url": "/fhc6/static/media/pepsi.e93ca1b3.png"
+  },
+  {
     "revision": "64aa07da9c7ccf15d93cf8bf8095d62b",
     "url": "/fhc6/static/media/pesto.64aa07da.png"
   },
@@ -630,6 +638,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c1c435205dc2536acd219dad5c2e9634",
     "url": "/fhc6/static/media/raleway-latin-900italic.c1c43520.woff2"
+  },
+  {
+    "revision": "68748ebf7d2bfb255af7739e59062ec6",
+    "url": "/fhc6/static/media/redbull.68748ebf.png"
   },
   {
     "revision": "ede60c08fc9304f8ad3ce7404fcaa7a9",
