@@ -1,16 +1,14 @@
 import React from "react";
-import { makeStyles, Tabs, Tab, Typography } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
 
 import MenuItem from "./MenuItem";
-import italian from "./assets/italian.jpg";
+import drinks from "./assets/drinks.jpg";
 import { useSelector } from "react-redux";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   const menu = useSelector((state) => {
-    if (value === 0) return state.items.italia.pizza;
-    if (value === 1) return state.items.italia.pasta;
-    if (value === 2) return state.items.italia.antipasti;
+      return state.items.begudes;
   });
 
   return (
@@ -41,15 +39,6 @@ const styles = makeStyles((theme) => ({
     width: "100%",
     paddingBottom: "80px",
   },
-  tabs: {
-    variant: "fullWidth",
-    //backgroundColor: "#f9fbe7"
-  },
-  tab: {
-    paddingRight: "30px",
-    paddingLeft: "30px",
-    fontSize: "15px",
-  },
   media: {
     height: 100,
     objectFit: "cover",
@@ -74,39 +63,19 @@ const styles = makeStyles((theme) => ({
   },
 }));
 
-export default function Italia() {
+export default function Begudes() {
   const classes = styles();
-
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
     <div className={classes.root}>
       <div className={classes.imageContainer}>
-        <img className={classes.media} src={italian} alt="" />
+        <img className={classes.media} src={drinks} alt="" />
         <div className={classes.imageContent}>
           <Typography className={classes.title} color="inherit" variant="h2">
-            ITALIÀ
+            BEGUDES
           </Typography>
         </div>
       </div>
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        className={classes.tabs}
-        centered
-      >
-        <Tab label="Pizza" className={classes.tab} />
-        <Tab label="Pasta" className={classes.tab} />
-        <Tab label="Antispasti" className={classes.tab} />
-      </Tabs>
-
-      <TabPanel value={value} index={0} />
-      <TabPanel value={value} index={1} />
-      <TabPanel value={value} index={2} />
+      <TabPanel/>
     </div>
   );
 }

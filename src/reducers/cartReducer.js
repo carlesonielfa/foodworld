@@ -47,7 +47,7 @@ const cartReducer = (state = initState, action) => {
       //If there was only one item we remove it
       if (addedItem.quantity === 1) {
         for (var i = 0; i < state.addedItems.length; i++) {
-          if (state.addedItems[i].id === action.id)
+          if (state.addedItems[i]["id"] === action.id)
             state.addedItems.splice(i, 1);
         }
       } else {
@@ -66,12 +66,32 @@ const cartReducer = (state = initState, action) => {
   return state;
 };
 //Per trobar un objecte al menu donat un id
-const findNestedId = (dict, id_item) => {
-  for (var i = 0; i < Object.keys(dict).length; i++) {
-    let list = dict[Object.keys(dict)[i]];
-    for (var j = 0; j < list.length; j++) {
-      if (list[j].id === id_item) return dict[Object.keys(dict)[i]][j];
-    }
+const findNestedId = (menu, id_item) => {
+  var result = null;
+  if(menu instanceof Array) {
+      for(var i = 0; i < menu.length; i++) {
+          result = findNestedId(menu[i], id_item);
+          if (result) {
+              break;
+          }   
+      }
   }
+  else
+  {
+      for(var prop in menu) {
+          if(prop === "id") {
+              if(menu[prop] === id_item) {
+                  return menu;
+              }
+          }
+          if(menu[prop] instanceof Object || menu[prop] instanceof Array) {
+              result = findNestedId(menu[prop], id_item);
+              if (result) {
+                  break;
+              }
+          } 
+      }
+  }
+  return result;
 };
 export default cartReducer;

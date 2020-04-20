@@ -10,28 +10,34 @@ export const images = [
     file: italian,
     title: "ITALIÀ",
     subtitle: "Pizza, Pasta, Antipasti",
+    link: "italia"
   },
   {
     file: japones,
     title: "JAPONÈS",
     subtitle: "Sushi, Noodles",
+    link: "italia"
   },
   {
     file: american,
     title: "AMERICÀ",
     subtitle: "Burgers, Meats, Sides",
+    link: "italia"
   },
   {
     file: mex,
     title: "MEXICÀ",
     subtitle: "Burritos, Tacos, Acompañamientos",
+    link: "italia"
   },
   {
     file: drinks,
     title: "BEGUDES",
+    link: "begudes"
   },
   {
     file: postres,
     title: "POSTRES",
+    link: "begudes"
   },
 ];

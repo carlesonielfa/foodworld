@@ -14,6 +14,7 @@ import Italia from "./Italia";
 import Checkout from "./Pagament";
 import Nosaltres from "./Nosaltres";
 import Contacte from "./Contacte";
+import Begudes from "./Begudes";
 // FONTS
 import "typeface-montserrat";
 import "typeface-inter";
@@ -60,6 +61,9 @@ function App() {
             </Route>
             <Route path="/fhc6/italia">
               <Italia />
+            </Route>
+            <Route path="/fhc6/begudes">
+              <Begudes />
             </Route>
             <Route path="/fhc6/checkout">
               <Checkout />

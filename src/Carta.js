@@ -85,7 +85,7 @@ export default function Carta() {
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           component={Link}
-          to="/fhc6/italia"
+          to={"/fhc6/"+image.link}
         >
           <span
             className={classes.imageSrc}
