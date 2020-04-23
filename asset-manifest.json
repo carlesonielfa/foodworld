@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/fhc6/static/css/main.5f361e03.chunk.css",
-    "main.js": "/fhc6/static/js/main.500cbcb4.chunk.js",
-    "main.js.map": "/fhc6/static/js/main.500cbcb4.chunk.js.map",
+    "main.css": "/fhc6/static/css/main.523f09c5.chunk.css",
+    "main.js": "/fhc6/static/js/main.2bbefb09.chunk.js",
+    "main.js.map": "/fhc6/static/js/main.2bbefb09.chunk.js.map",
     "runtime-main.js": "/fhc6/static/js/runtime-main.6ae8668f.js",
     "runtime-main.js.map": "/fhc6/static/js/runtime-main.6ae8668f.js.map",
     "static/css/2.727f0f9d.chunk.css": "/fhc6/static/css/2.727f0f9d.chunk.css",
-    "static/js/2.5820dae0.chunk.js": "/fhc6/static/js/2.5820dae0.chunk.js",
-    "static/js/2.5820dae0.chunk.js.map": "/fhc6/static/js/2.5820dae0.chunk.js.map",
+    "static/js/2.2d308dd4.chunk.js": "/fhc6/static/js/2.2d308dd4.chunk.js",
+    "static/js/2.2d308dd4.chunk.js.map": "/fhc6/static/js/2.2d308dd4.chunk.js.map",
     "index.html": "/fhc6/index.html",
-    "precache-manifest.1602925c341eac4b445f84089eb454d2.js": "/fhc6/precache-manifest.1602925c341eac4b445f84089eb454d2.js",
+    "precache-manifest.f109d7a11b35505378d02b5bb4863aa7.js": "/fhc6/precache-manifest.f109d7a11b35505378d02b5bb4863aa7.js",
     "service-worker.js": "/fhc6/service-worker.js",
     "static/css/2.727f0f9d.chunk.css.map": "/fhc6/static/css/2.727f0f9d.chunk.css.map",
-    "static/css/main.5f361e03.chunk.css.map": "/fhc6/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.5820dae0.chunk.js.LICENSE.txt": "/fhc6/static/js/2.5820dae0.chunk.js.LICENSE.txt",
+    "static/css/main.523f09c5.chunk.css.map": "/fhc6/static/css/main.523f09c5.chunk.css.map",
+    "static/js/2.2d308dd4.chunk.js.LICENSE.txt": "/fhc6/static/js/2.2d308dd4.chunk.js.LICENSE.txt",
     "static/media/4quesos.png": "/fhc6/static/media/4quesos.8170918e.png",
     "static/media/inter.css": "/fhc6/static/media/Inter.var.7e1eda3a.woff2",
     "static/media/aigua.png": "/fhc6/static/media/aigua.20c1791b.png",
     "static/media/american.jpg": "/fhc6/static/media/american.bc5aecf3.jpg",
     "static/media/bbq.png": "/fhc6/static/media/bbq.c5e704c6.png",
     "static/media/bolognese.png": "/fhc6/static/media/bolognese.f0ee8dcb.png",
-    "static/media/burrito.png": "/fhc6/static/media/burrito.0b256bba.png",
     "static/media/caprese.png": "/fhc6/static/media/caprese.6dbb683c.png",
     "static/media/carbonara.png": "/fhc6/static/media/carbonara.686d0bd0.png",
     "static/media/carbonarap.png": "/fhc6/static/media/carbonarap.c42f58f6.png",
@@ -44,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.6ae8668f.js",
     "static/css/2.727f0f9d.chunk.css",
-    "static/js/2.5820dae0.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.500cbcb4.chunk.js"
+    "static/js/2.2d308dd4.chunk.js",
+    "static/css/main.523f09c5.chunk.css",
+    "static/js/main.2bbefb09.chunk.js"
   ]
 }
