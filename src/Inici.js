@@ -82,19 +82,21 @@ const suggestionBox = makeStyles((theme) => ({
 const menuButton = makeStyles((theme) => ({
   root: {
     position: "center",
-    height: 25,
-    width: "80%",
+    height: 28,
+    width: "90%",
     marginTop: "10px",
     marginBot: "20px",
     marginLeft: "10px",
     marginRight: "10px",
-    borderRadius: "5px",
-    backgroundColor: theme.palette.secondary.main,
+    borderRadius: "7px",
+    backgroundColor: "#828181",
     color: theme.palette.background.main,
   },
   container: {
-    display: "flex",
     paddingBottom: "50px",
+    paddingTop: "20px",
+    paddingLeft: "30px",
+    paddingRight: "30px",
   },
   leftContainer: {
     float: "left",
@@ -137,8 +139,8 @@ export default function Inici() {
       <FoodButton component={Link} to="/fhc6/carta" text="Veure Carta" />
       <FoodButton component={Link} to="/fhc6/carta" text="Repetir Comanda" />
       <div class={classes.suggestionContainer}>
-        <Typography align="left" variant="h2" color="inherit">
-          Suggermients
+        <Typography align="left" variant="h3" color="inherit">
+          Suggermient de la setmana
         </Typography>
         <div className={suggestions.itemBox}>
           <div className={suggestions.imageContainer}>
@@ -154,23 +156,6 @@ export default function Inici() {
             </Typography>
             <Typography className={suggestions.description}>
               La més demanada pels clients
-            </Typography>
-          </div>
-        </div>
-        <div className={suggestions.itemBox}>
-          <div className={suggestions.imageContainer}>
-            <img
-              className={suggestions.image}
-              src={burrito}
-              alt="Burrito"
-            ></img>
-          </div>
-          <div className={suggestions.infoContainer}>
-            <Typography variant="h3" align="left">
-              Burrito Mixto
-            </Typography>
-            <Typography className={suggestions.description}>
-              Barreja de carn i verds!
             </Typography>
           </div>
         </div>
