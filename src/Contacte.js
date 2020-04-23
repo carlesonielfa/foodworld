@@ -5,11 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
 import PlaceIcon from "@material-ui/icons/Place";
-import RoomIcon from "@material-ui/icons/Room";
 import { Grid } from "@material-ui/core";
 import map from "./assets/map.png";
-
-import GoogleMap from "google-map-react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,17 +22,8 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "30px",
     width: "100%",
     height: "auto",
-  }
+  },
 }));
-
-const Marker = ({ title }) => (
-  <div>
-    <RoomIcon />
-    <Typography display="inline" align="center" noWrap>
-      {title}
-    </Typography>
-  </div>
-);
 
 const items = [
   {
@@ -81,6 +69,6 @@ export default function Contacte() {
       <div align="center">
         <img src={map} class={classes.responsive} alt=""></img>
       </div>
-      </div>
+    </div>
   );
 }

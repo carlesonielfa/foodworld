@@ -25,16 +25,16 @@ const styles = makeStyles((theme) => ({
 export default function QuantitySelect(props) {
   const classes = styles();
   const dispatch = useDispatch();
-  const quantity = useSelector((state)=>{    
-    let q = state.addedItems.find(item =>item.id === props.id)
-    return q? q.quantity:0
+  const quantity = useSelector((state) => {
+    let q = state.addedItems.find((item) => item.id === props.id);
+    return q ? q.quantity : 0;
   });
-  const handleAddClick = (id_item) =>{
-    dispatch({type: "ADD_TO_CART", id:id_item})
-  }
-  const handleRemoveClick = (id_item) =>{
-    dispatch({type: "REMOVE_FROM_CART", id:id_item})
-  }
+  const handleAddClick = (id_item) => {
+    dispatch({ type: "ADD_TO_CART", id: id_item });
+  };
+  const handleRemoveClick = (id_item) => {
+    dispatch({ type: "REMOVE_FROM_CART", id: id_item });
+  };
   return (
     <div className={classes.root}>
       <Typography
@@ -44,11 +44,23 @@ export default function QuantitySelect(props) {
       >
         {props.price.toFixed(2)}€
       </Typography>
-      <IconButton className={classes.iconButton} aria-label="add" onClick={()=>{handleAddClick(props.id)}}>
+      <IconButton
+        className={classes.iconButton}
+        aria-label="add"
+        onClick={() => {
+          handleAddClick(props.id);
+        }}
+      >
         <AddCircleOutlineIcon />
       </IconButton>
       <Typography variant="h3"> {quantity} </Typography>
-      <IconButton className={classes.iconButton} aria-label="remove" onClick={()=>{handleRemoveClick(props.id)}}>
+      <IconButton
+        className={classes.iconButton}
+        aria-label="remove"
+        onClick={() => {
+          handleRemoveClick(props.id);
+        }}
+      >
         <RemoveCircleOutlineIcon />
       </IconButton>
     </div>

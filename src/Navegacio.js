@@ -65,7 +65,7 @@ export default function Navegacio() {
   return (
     <BottomNavigation
       value={value}
-      onChange={(event, newValue) => {
+      onChange={(newValue) => {
         setValue(newValue);
       }}
       showLabels
@@ -87,7 +87,7 @@ export default function Navegacio() {
       <BottomNavigationAction
         classes={buttonClasses}
         icon={
-          <Badge badgeContent={cartQuantity} color="error" >
+          <Badge badgeContent={cartQuantity } color="error" style= {{fontFamily:'"Montserrat", "Inter", sans-serif'}} >
             <ShoppingCart  style={{ fontSize: 26 }}/>
           </Badge>
         }

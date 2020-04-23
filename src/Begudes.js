@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   const menu = useSelector((state) => {
-      return state.items.begudes;
+    return state.items.begudes;
   });
 
   return (
@@ -19,8 +19,7 @@ function TabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {menu.map((item) => 
-      (
+      {menu.map((item) => (
         <MenuItem
           image={item.image}
           title={item.title}
@@ -75,7 +74,7 @@ export default function Begudes() {
           </Typography>
         </div>
       </div>
-      <TabPanel/>
+      <TabPanel />
     </div>
   );
 }

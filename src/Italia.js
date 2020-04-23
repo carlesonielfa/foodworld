@@ -21,8 +21,7 @@ function TabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {menu.map((item) => 
-      (
+      {menu.map((item) => (
         <MenuItem
           image={item.image}
           title={item.title}

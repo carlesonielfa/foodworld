@@ -9,7 +9,6 @@ import {
 import { Link } from "react-router-dom";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import carbonara from "./assets/carbonara.png";
-import burrito from "./assets/burrito.png";
 import FoodButton from "./FoodButton";
 
 const mainMenu = makeStyles((theme) => ({

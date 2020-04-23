@@ -85,7 +85,7 @@ export default function Carta() {
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
           component={Link}
-          to={"/fhc6/"+image.link}
+          to={"/fhc6/" + image.link}
         >
           <span
             className={classes.imageSrc}
@@ -101,10 +101,7 @@ export default function Carta() {
               className={classes.imageTitle}
             >
               {image.title}
-              <Typography
-                color="inherit"
-                className={classes.imageSubtitle}
-              >
+              <Typography color="inherit" className={classes.imageSubtitle}>
                 {image.subtitle}
               </Typography>
             </Typography>
