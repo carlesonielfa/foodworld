@@ -44,7 +44,7 @@ function FormulariEnviament() {
   );
 }
 
-const dadesPagament = ["Titular de la tarjeta", "Número de la tarjeta"];
+const dadesPagament = ["Titular de la targeta", "Número de la targeta"];
 
 function FormulariPagament() {
   const [mes, setMes] = React.useState("1");
