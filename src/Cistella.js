@@ -32,7 +32,7 @@ export default function Cistella() {
         <MenuItem
           image={item.image}
           title={item.title}
-          description={item.description}
+          description={<br/>}
           price={item.price}
           id={item.id}
         />

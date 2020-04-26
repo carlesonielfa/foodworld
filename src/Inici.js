@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import carbonara from "./assets/carbonara.png";
 import FoodButton from "./FoodButton";
+import MenuItem from "./MenuItem";
+import { useSelector } from "react-redux";
 
 const mainMenu = makeStyles((theme) => ({
   mainDiv: {
@@ -53,8 +55,7 @@ const mainMenu = makeStyles((theme) => ({
 
 const suggestionBox = makeStyles((theme) => ({
   itemBox: {
-    paddingTop: "15px",
-    paddingRight: "20px",
+    paddingBottom: "40px",
     height: "100px",
   },
   imageContainer: {
@@ -65,13 +66,6 @@ const suggestionBox = makeStyles((theme) => ({
   },
   image: {
     width: "110px",
-  },
-  infoContainer: {
-    paddingTop: "20px",
-    width: "65%",
-    float: "right",
-    verticalAlign: "middle",
-    //backgroundColor: "grey"
   },
   description: {
     textAlign: "justify",
@@ -113,7 +107,9 @@ export default function Inici() {
   const classes = mainMenu();
   const suggestions = suggestionBox();
   const menuButtons = menuButton();
-
+  const suggermiment = useSelector((state) => {
+    return state.items.italia.pizza[1];
+  });
   return (
     <div class={classes.mainDiv}>
       <div>
@@ -142,21 +138,13 @@ export default function Inici() {
           Suggermient de la setmana
         </Typography>
         <div className={suggestions.itemBox}>
-          <div className={suggestions.imageContainer}>
-            <img
-              className={suggestions.image}
-              src={carbonara}
-              alt="Carbonara"
-            ></img>
-          </div>
-          <div className={suggestions.infoContainer}>
-            <Typography variant="h3" align="left">
-              Carbonara
-            </Typography>
-            <Typography className={suggestions.description}>
-              La més demanada pels clients
-            </Typography>
-          </div>
+              <MenuItem
+              image={suggermiment.image}
+              title={suggermiment.title}
+              description={suggermiment.description}
+              price={suggermiment.price}
+              id={suggermiment.id}
+            />
         </div>
       </div>
 
