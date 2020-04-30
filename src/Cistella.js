@@ -32,9 +32,10 @@ export default function Cistella() {
         <MenuItem
           image={item.image}
           title={item.title}
-          description={<br/>}
+          description={item.description}
           price={item.price}
           id={item.id}
+          noDescription
         />
       ))}
       <Typography className={classes.root} align="right" variant="h3">

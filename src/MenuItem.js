@@ -29,7 +29,6 @@ const styles = makeStyles((theme) => ({
 
 export default function MenuItem(props) {
   const classes = styles();
-
   return (
     <div className={classes.root}>
       <div className={classes.imageContainer}>
