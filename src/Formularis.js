@@ -32,11 +32,13 @@ function FormulariEnviament() {
       <form>
         <div>
           {dadesEnviament.map((dada) => (
-            <TextField
-              className={classes.field}
-              id="standard-basic"
-              label={dada}
-            />
+            <div>
+              <TextField
+                className={classes.field}
+                id="standard-basic"
+                label={dada}
+              />
+            </div>
           ))}
         </div>
       </form>
@@ -65,11 +67,13 @@ function FormulariPagament() {
       <form>
         <div>
           {dadesPagament.map((dada) => (
+            <div>
             <TextField
               className={classes.field}
               id="standard-basic"
               label={dada}
             />
+            </div>
           ))}
           <div className={classes.number}>
             <div className={classes.field}>
