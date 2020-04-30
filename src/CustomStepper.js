@@ -11,6 +11,8 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { FormulariEnviament, FormulariPagament } from "./Formularis";
 import Seguiment from "./Seguiment";
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
 
 const QontoConnector = withStyles((theme) => ({
   alternativeLabel: {
@@ -101,6 +103,10 @@ const useStyles = makeStyles((theme) => ({
   stepper: {
     backgroundColor: theme.palette.background.main,
   },
+  snackbar: {
+    position:"absolute",
+    bottom: theme.spacing(15)
+  }
 }));
 
 function getSteps() {
@@ -119,7 +125,9 @@ function getStepContent(step) {
       return "Unknown step";
   }
 }
-
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 export default function CustomStepper() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
@@ -127,6 +135,9 @@ export default function CustomStepper() {
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    if(activeStep === 1){
+      setOpen(true);
+    }
   };
 
   const handleBack = () => {
@@ -135,7 +146,36 @@ export default function CustomStepper() {
 
   const handleReset = () => {
     setActiveStep(0);
+  }; 
+  const handleClose = () => {
+    setOpen(false);
+  }; 
+  const buttons = (activeStep) =>{
+    if(activeStep === steps.length - 1)
+    {
+      return <div/>
+    }
+    else{
+    return(<div className={classes.buttonContainer}>
+      <Button
+        disabled={activeStep === 0}
+        onClick={handleBack}
+        className={classes.button}
+      >
+        Enrere
+      </Button>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={handleNext}
+        className={classes.button}
+      >
+        Següent
+      </Button>
+    </div>)
+    }
   };
+  const [open, setOpen] = React.useState(false);
 
   return (
     <div className={classes.root}>
@@ -166,23 +206,16 @@ export default function CustomStepper() {
             <Typography className={classes.instructions}>
               {getStepContent(activeStep)}
             </Typography>
-            <div className={classes.buttonContainer}>
-              <Button
-                disabled={activeStep === 0}
-                onClick={handleBack}
-                className={classes.button}
-              >
-                Enrere
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={handleNext}
-                className={classes.button}
-              >
-                {activeStep === steps.length - 1 ? "Valorar" : "Següent"}
-              </Button>
-            </div>
+            {buttons(activeStep)}
+            <Snackbar
+             open={open}
+             autoHideDuration={3000}
+             onClose={handleClose}
+             className={classes.snackbar}>
+              <Alert onClose={handleClose} severity="success">
+              Comanda realitzada amb èxit!
+              </Alert>
+            </Snackbar>
           </div>
         )}
       </div>
