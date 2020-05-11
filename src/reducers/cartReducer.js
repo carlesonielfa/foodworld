@@ -62,6 +62,16 @@ const cartReducer = (state = initState, action) => {
       console.log("Item id " + action.id + " not in cart, not doing anything");
     }
   }
+  if (action.type === "CLEAR_CART") {
+    //Remove all items from cart
+    return {
+      ...state,
+      addedItems: [],
+      total: 0,
+      totalItems: 0,
+    };
+    
+  }
 
   return state;
 };

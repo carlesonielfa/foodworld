@@ -13,6 +13,7 @@ import { FormulariEnviament, FormulariPagament } from "./Formularis";
 import Seguiment from "./Seguiment";
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
+import { useDispatch, useSelector } from "react-redux";
 
 const QontoConnector = withStyles((theme) => ({
   alternativeLabel: {
@@ -132,11 +133,12 @@ export default function CustomStepper() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
-
+  const dispatch = useDispatch();
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
     if(activeStep === 1){
       setOpen(true);
+      dispatch({ type: "CLEAR_CART"});
     }
   };
 
